@@ -1,0 +1,8 @@
+name: "yasr"
+displayName: "Yet another Serpulo Rebalance"
+author: "Rushie Washie, GooglyGoo"
+description: "Serpulo Tweaks"
+version: "1.0"
+minGameVersion: "143.1"
+hidden: false
+subtitle: "meow v1.0"
