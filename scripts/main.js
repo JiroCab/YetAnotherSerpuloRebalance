@@ -78,7 +78,8 @@ UnitTypes.oct.health = 12000;
 UnitTypes.oct.buildSpeed = 20;
 UnitTypes.oct.itemCapacity = 1000;
 UnitTypes.oct.abilities.get(0).max = 40000;
-UnitTypes.oct.abilities.get(0).regen = (500);
+UnitTypes.oct.abilities.get(0).regen = (500/60);
+//when I loaded up the mod the shield regen was 30,000 lol
 
 UnitTypes.flare.weapons.get(0).bullet.homingPower = 0.04;
 
@@ -106,6 +107,7 @@ UnitTypes.sei.health = 3000;
 UnitTypes.sei.weapons.get(0).bullet.maxRange = 30;
 
 UnitTypes.omura.health = 15000;
+UnitTypes.omura.weapons.get(0).bullet.damage = 2500;
 
 UnitTypes.aegires.health = 4000;
 
