@@ -173,7 +173,7 @@ Blocks.meltdown.shootType.collidesAir = false;
 
 Blocks.exponentialReconstructor.constructTime = 60 * 60 * (1.5 / 2);
 let expoCons = new ConsumeItems(ItemStack.with(Items.silicon, (850 / 2), Items.titanium, (750 / 2), Items.plastanium, (650/ 2)));
-Blocks.exponentialReconstructor.requirements = ItemStack.with(Items.lead, 2000, Items.silicon, 1000, Items.titanium, 2000, Items.plastanium, 450);
+Blocks.exponentialReconstructor.requirements = ItemStack.with(Items.lead, 1200, Items.titanium, 1000, Items.thorium, 650, Items.silicon, 700,  Items.plastanium, 250);
 
 Blocks.tetrativeReconstructor.constructTime = 60 * 60 * (4 * 2);
 let tetrCons = new ConsumeItems(ItemStack.with(Items.silicon, (1000 * 2), Items.plastanium, (600 * 2), Items.surgeAlloy, (500 * 2), Items.phaseFabric, (350 * 2)));
