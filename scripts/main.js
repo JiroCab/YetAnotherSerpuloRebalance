@@ -43,7 +43,7 @@ UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 300;
 
-UnitTypes.atrax.speed = (1.37 / 7.5);
+UnitTypes.atrax.hitSize = 13;
 
 //Unrelated, Rushie cannot spell spriroct
 UnitTypes.spiroct.speed = (5 / 7.5);
@@ -118,9 +118,11 @@ Blocks.duo.ammoTypes.get(Items.graphite).ammoMultiplier = 8;
 Blocks.duo.ammoTypes.get(Items.silicon).ammoMultiplier = 10;
 
 Blocks.swarmer.targetGround = false;
+Blocks.swarmer.inaccuracy = 1;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).speed = 7.4;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).lightning = 1;
+Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).damage = 45;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).splashDamage = 0;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).splashDamageRadius = -1;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).hitEffect = new MultiEffect(Fx.hitBulletSmall, Fx.hitLancer);
@@ -131,12 +133,14 @@ Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).trailColor = Items.surgeAlloy.col
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).backColor = Pal.lightishOrange;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).speed = 7.4;
+Blocks.swarmer.ammoTypes.get(Items.pyratite).damage = 55;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).splashDamage = 0;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).splashDamageRadius = -1;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).hitEffect = new MultiEffect(Fx.hitBulletSmall, Fx.fireHit);
 Blocks.swarmer.ammoTypes.get(Items.pyratite).despawnEffect = new MultiEffect(Fx.hitBulletSmall, Fx.fireHit);
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).speed = 7.4;
+Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 35;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 20;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 8;
 Blocks.swarmer.range = 400;
