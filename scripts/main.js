@@ -71,7 +71,7 @@ UnitTypes.quad.health = 1000;
 UnitTypes.quad.payloadCapacity = 0;
 UnitTypes.quad.speed = (20 / 7.5);
 UnitTypes.quad.constructor = UnitTypes.flare.constructor;
-UnitTypes.quad.weapons.get(0).bullet.damage = 1000;
+UnitTypes.quad.weapons.get(0).bullet.splashDamage = 1000;
 UnitTypes.quad.weapons.get(0).reload = 300;
 
 UnitTypes.oct.health = 12000;
