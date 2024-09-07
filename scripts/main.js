@@ -58,7 +58,7 @@ UnitTypes.arkyid.weapons.get(2).bullet.collidesAir = false;
 UnitTypes.arkyid.health = 4000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
-UnitTypes.arkyid.weapons.get(0).bullet.damage = 500;
+UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
 
 UnitTypes.poly.health = 200;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
@@ -152,14 +152,14 @@ Blocks.fuse.ammoTypes.get(Items.thorium).collidesAir = false;
 Blocks.fuse.ammoTypes.get(Items.titanium).collidesAir = false;
 
 Blocks.cyclone.range = 240;
-Blocks.cyclone.targetAir = false;
-Blocks.cyclone.ammoTypes.get(Items.metaglass).collidesAir = false;
-Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullet.collidesAir = false;
-Blocks.cyclone.ammoTypes.get(Items.plastanium).collidesAir = false;
-Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullet.collidesAir = false;
-Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).collidesAir = false;
+Blocks.cyclone.targetGround = false;
+Blocks.cyclone.ammoTypes.get(Items.metaglass).collidesGround = false;
+Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullet.collidesGround = false;
+Blocks.cyclone.ammoTypes.get(Items.plastanium).collidesGround = false;
+Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullet.collidesGround = false;
+Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).lightningType = lightningBul;
-Blocks.cyclone.ammoTypes.get(Items.blastCompound).collidesAir = false;
+Blocks.cyclone.ammoTypes.get(Items.blastCompound).collidesGround = false;
 Blocks.cyclone.limitRange();
 
 Blocks.meltdown.targetAir = false;
