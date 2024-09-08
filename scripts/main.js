@@ -89,10 +89,11 @@ UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
 
 UnitTypes.zenith.health = 400;
 UnitTypes.zenith.speed = (26 / 7.5);
+UnitTypes.zenith.range = 280f;
 UnitTypes.zenith.weapons.get(0).bullet.collidesGround = false;
 UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 3);
-UnitTypes.zenith.weapons.get(0).bullet.damage = 50;
-UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 9) * 7.5;
+UnitTypes.zenith.weapons.get(0).bullet.damage = 100;
+UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 9) * 2 * 7.5;
 
 UnitTypes.antumbra.health = 3000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
