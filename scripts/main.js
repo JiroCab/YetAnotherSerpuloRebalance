@@ -43,7 +43,7 @@ UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 300;
 
-UnitTypes.atrax.hitSize = 13;
+UnitTypes.atrax.hitSize = 11;
 
 //Unrelated, Rushie cannot spell spriroct
 UnitTypes.spiroct.speed = (5 / 7.5);
