@@ -62,9 +62,6 @@ UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
 
 UnitTypes.poly.health = 200;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
-UnitTypes.poly.targetGround = false;
-UnitTypes.poly.weapons.get(0).bullet.collidesGround = true;
-UnitTypes.poly.weapons.get(0).bullet.damage = 20;
 UnitTypes.poly.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 
 UnitTypes.quad.health = 1000;
@@ -121,8 +118,7 @@ Blocks.swarmer.targetGround = false;
 Blocks.swarmer.inaccuracy = 1;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).speed = 7.4;
-Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).lightning = 1;
-Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).damage = 45;
+Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).damage = 90;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).splashDamage = 0;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).splashDamageRadius = -1;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).hitEffect = new MultiEffect(Fx.hitBulletSmall, Fx.hitLancer);
@@ -133,16 +129,16 @@ Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).trailColor = Items.surgeAlloy.col
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).backColor = Pal.lightishOrange;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).speed = 7.4;
-Blocks.swarmer.ammoTypes.get(Items.pyratite).damage = 55;
+Blocks.swarmer.ammoTypes.get(Items.pyratite).damage = 11o;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).splashDamage = 0;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).splashDamageRadius = -1;
 Blocks.swarmer.ammoTypes.get(Items.pyratite).hitEffect = new MultiEffect(Fx.hitBulletSmall, Fx.fireHit);
 Blocks.swarmer.ammoTypes.get(Items.pyratite).despawnEffect = new MultiEffect(Fx.hitBulletSmall, Fx.fireHit);
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).speed = 7.4;
-Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 35;
-Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 20;
-Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 8;
+Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 70;
+Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 40;
+Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 20;
 Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
 
@@ -160,12 +156,19 @@ Blocks.fuse.ammoTypes.get(Items.titanium).collidesAir = false;
 Blocks.cyclone.range = 240;
 Blocks.cyclone.targetGround = false;
 Blocks.cyclone.ammoTypes.get(Items.metaglass).collidesGround = false;
+Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullet.damage = 100;
+Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullets = 6;
 Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullet.collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.plastanium).collidesGround = false;
+Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullet.damage = 200;
+Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullets = 6;
 Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullet.collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).collidesGround = false;
+Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).lightning = 2;
+Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).lightningDamage = 100;
 Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).lightningType = lightningBul;
 Blocks.cyclone.ammoTypes.get(Items.blastCompound).collidesGround = false;
+Blocks.cyclone.ammoTypes.get(Items.blastCompound).splashDamage = 200;
 Blocks.cyclone.limitRange();
 
 Blocks.meltdown.targetAir = false;
