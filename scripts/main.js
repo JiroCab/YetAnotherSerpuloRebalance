@@ -117,12 +117,6 @@ Blocks.duo.ammoTypes.get(Items.copper).ammoMultiplier = 4;
 Blocks.duo.ammoTypes.get(Items.graphite).ammoMultiplier = 8;
 Blocks.duo.ammoTypes.get(Items.silicon).ammoMultiplier = 10;
 
-Blocks.parallax.range = 440;
-Blocks.parallax.minRange = 300;
-Blocks.parallax.force = 36;
-Blocks.parallax.scaledForce = 18;
-Blocks.parallax.rotateSpeed = 20;
-
 Blocks.swarmer.targetGround = false;
 Blocks.swarmer.inaccuracy = 1;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).collidesGround = false;
