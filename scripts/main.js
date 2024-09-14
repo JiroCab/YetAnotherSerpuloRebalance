@@ -111,6 +111,9 @@ UnitTypes.aegires.health = 3000;
 
 UnitTypes.navanax.health = 60000;
 UnitTypes.navanax.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.navanax.weapons.get(1).bullet.collidesAir = false;
+UnitTypes.navanax.weapons.get(2).bullet.collidesAir = false;
+UnitTypes.navanax.weapons.get(3).bullet.collidesAir = false;
 
 Blocks.duo.ammoTypes.get(Items.copper).ammoMultiplier = 4;
 Blocks.duo.ammoTypes.get(Items.graphite).ammoMultiplier = 8;
