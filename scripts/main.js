@@ -59,6 +59,7 @@ UnitTypes.arkyid.health = 4000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
+UnitTypes.toxopid.weapons.get(0).bullet.collidesAir = false;
 
 UnitTypes.poly.health = 200;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
@@ -95,7 +96,6 @@ UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 3);
 UnitTypes.zenith.weapons.get(0).bullet.damage = 100;
 UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 9) * 2 * 7.5;
 
-UnitTypes.antumbra.health = 3000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 
@@ -107,7 +107,7 @@ UnitTypes.sei.weapons.get(0).bullet.maxRange = 30;
 UnitTypes.omura.health = 15000;
 UnitTypes.omura.weapons.get(0).bullet.damage = 2500;
 
-UnitTypes.aegires.health = 4000;
+UnitTypes.aegires.health = 3000;
 
 UnitTypes.navanax.health = 60000;
 
@@ -116,7 +116,7 @@ Blocks.duo.ammoTypes.get(Items.graphite).ammoMultiplier = 8;
 Blocks.duo.ammoTypes.get(Items.silicon).ammoMultiplier = 10;
 
 Blocks.swarmer.targetGround = false;
-Blocks.swarmer.inaccuracy = 1;
+Blocks.swarmer.inaccuracy = 2;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).speed = 7.4;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).damage = 90;
@@ -137,8 +137,8 @@ Blocks.swarmer.ammoTypes.get(Items.pyratite).hitEffect = new MultiEffect(Fx.hitB
 Blocks.swarmer.ammoTypes.get(Items.pyratite).despawnEffect = new MultiEffect(Fx.hitBulletSmall, Fx.fireHit);
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).speed = 7.4;
-Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 70;
-Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 40;
+Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 90;
+Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 20;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 20;
 Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
