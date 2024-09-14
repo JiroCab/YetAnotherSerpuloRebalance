@@ -1,4 +1,4 @@
-//Speed is x * 7.5 to get whatever is displayed in the core database
+S//Speed is x * 7.5 to get whatever is displayed in the core database
 //to pick which weapons are, replace the numer in `get(x)`, order of weapons can be checked in the core database
 // ^ pair of weapons are counted as one and affect both, and it starts from 0
  //compensating for hit rate 
@@ -110,6 +110,7 @@ UnitTypes.omura.weapons.get(0).bullet.damage = 2500;
 UnitTypes.aegires.health = 3000;
 
 UnitTypes.navanax.health = 60000;
+UnitTypes.navanax.weapons.get(0).bullet.collidesAir = false;
 
 Blocks.duo.ammoTypes.get(Items.copper).ammoMultiplier = 4;
 Blocks.duo.ammoTypes.get(Items.graphite).ammoMultiplier = 8;
