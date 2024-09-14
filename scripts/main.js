@@ -1,4 +1,4 @@
-S//Speed is x * 7.5 to get whatever is displayed in the core database
+//Speed is x * 7.5 to get whatever is displayed in the core database
 //to pick which weapons are, replace the numer in `get(x)`, order of weapons can be checked in the core database
 // ^ pair of weapons are counted as one and affect both, and it starts from 0
  //compensating for hit rate 
