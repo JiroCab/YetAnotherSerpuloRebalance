@@ -43,7 +43,34 @@ UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 300;
 
+let atraxAAWeapon = new Weapon();
+let atraxAAPart = new RegionPart("quell-missile")
+atraxAAPart.rotation = 180;
+atraxAAPart.xScl = 0.5;
+atraxAAPart.yScl = 0.5;
+
+atraxAAWeapon.region = UnitTypes.crawler.weapons.get(0).region;
+atraxAAWeapon.parts.add(atraxAAPart);
+atraxAAWeapon.bullet = new FlakBulletType(5, 1);
+atraxAAWeapon.bullet.sprite = "large-orb";
+atraxAAWeapon.bullet.frontColor = Pal.sapBullet;
+atraxAAWeapon.bullet.backColor = Pal.sapBulletBack;
+atraxAAWeapon.mirror = false;
+atraxAAWeapon.rotate = true;
+atraxAAWeapon.x = 0;
+atraxAAWeapon.y = 2;
+atraxAAWeapon.shootY = 2;
+atraxAAWeapon.reload = 18;
+atraxAAWeapon.shootSound = Sounds.shootSnap;
+atraxAAWeapon.bullet.lifetime = 30;
+atraxAAWeapon.bullet.splashDamage = 10 * 1.5;
+atraxAAWeapon.bullet.splashDamageRadius = 10;
+
 UnitTypes.atrax.hitSize = 11;
+UnitTypes.atrax.range = 110;
+UnitTypes.atrax.maxRange = 110; //manual ovrride so it doesnt attack at full range of the mini scatter (18)
+UnitTypes.atrax.weapons.add(atraxAAWeapon);
+
 
 //Unrelated, Rushie cannot spell spriroct
 UnitTypes.spiroct.speed = (5 / 7.5);
@@ -61,15 +88,35 @@ UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
 UnitTypes.toxopid.weapons.get(0).bullet.collidesAir = false;
 
+let polyHeal = new RepairBeamWeapon("repair-beam-weapon-center");
+polyHeal.bullet = new BulletType(); //idk this is the convetion and prob to not edit Bullets.placeholder
+polyHeal.targetBuildings = true; 
+polyHeal.targetUnits = false; 
+polyHeal.top = false;
+polyHeal.mirror = false;
+polyHeal.x = 0;
+polyHeal.beamWidth = 0.8;
+polyHeal.layerOffset = -1;
+polyHeal.repairSpeed = 0.84;
+polyHeal.bullet.maxRange = 120;
+polyHeal.bullet.healPercent = 5.5;
+
+UnitTypes.poly.weapons.add(polyHeal);
+UnitTypes.poly.weapons.get(0).velocityRnd = 0;
+UnitTypes.poly.weapons.get(0).bullet.damage = 50;
+UnitTypes.poly.weapons.get(0).bullet.speed = 4 * 1.5;
+UnitTypes.poly.weapons.get(0).bullet.lifetime = 50 / 1.5;
+UnitTypes.poly.weapons.get(0).bullet.collidesGround = false;
 UnitTypes.poly.health = 200;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
 UnitTypes.poly.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
+UnitTypes.poly.canHeal = true;
 
 UnitTypes.quad.health = 1000;
 UnitTypes.quad.payloadCapacity = 0;
 UnitTypes.quad.speed = (20 / 7.5);
 UnitTypes.quad.constructor = UnitTypes.flare.constructor;
-UnitTypes.quad.weapons.get(0).bullet.damage = 200
+UnitTypes.quad.weapons.get(0).bullet.damage = 200;												 
 UnitTypes.quad.weapons.get(0).bullet.splashDamage = 1000;
 UnitTypes.quad.weapons.get(0).reload = 300;
 
@@ -88,7 +135,7 @@ UnitTypes.horizon.weapons.get(0).shoot.shots = 10;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
 UnitTypes.horizon.weapons.get(0).reload = (60 * 5);
 UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
-UnitTypes.horizon.weapons.get(0).bullet.damage = 3
+UnitTypes.horizon.weapons.get(0).bullet.damage = 3												  
 
 UnitTypes.zenith.health = 400;
 UnitTypes.zenith.speed = (26 / 7.5);
@@ -177,7 +224,7 @@ Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).lightningType = lightningBul;
 Blocks.cyclone.ammoTypes.get(Items.blastCompound).collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.blastCompound).splashDamage = 200;
 Blocks.cyclone.limitRange();
-Blocks.cyclone.requirements = ItemStack.with(Items.copper, 1000, Items.titanium, 500,  Items.plastanium, 240);
+Blocks.cyclone.requirements = ItemStack.with(Items.copper, 1000, Items.titanium, 500,  Items.plastanium, 240);																											  
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
@@ -189,8 +236,17 @@ Blocks.exponentialReconstructor.requirements = ItemStack.with(Items.lead, 1200, 
 Blocks.tetrativeReconstructor.constructTime = 60 * 60 * (4 * 2);
 let tetrCons = new ConsumeItems(ItemStack.with(Items.silicon, (1000 * 2), Items.plastanium, (600 * 2), Items.surgeAlloy, (500 * 2), Items.phaseFabric, (350 * 2)));
 
-//Work around since no easier way to do this that i know off -Rushie
-Events.on(ClientLoadEvent, () => {
+function postLoadContent(){
+	//Work around since no easier way to do this that i know off -Rushie
 	Blocks.exponentialReconstructor.consumers[1] = expoCons;	
 	Blocks.tetrativeReconstructor.consumers[1] = tetrCons;	
+}
+
+//haha forgot to make some changes load also on dedicated servers
+Events.on(ClientLoadEvent, () => {
+	postLoadContent();
+});
+
+Events.on(ServerLoadEvent, () => {
+	postLoadContent();
 });
