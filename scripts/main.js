@@ -116,7 +116,7 @@ UnitTypes.quad.health = 1000;
 UnitTypes.quad.payloadCapacity = 0;
 UnitTypes.quad.speed = (20 / 7.5);
 UnitTypes.quad.constructor = UnitTypes.flare.constructor;
-UnitTypes.quad.weapons.get(0).bullet.damage = 200;												 
+UnitTypes.quad.weapons.get(0).bullet.damage = 400;												 
 UnitTypes.quad.weapons.get(0).bullet.splashDamage = 1000;
 UnitTypes.quad.weapons.get(0).reload = 300;
 
@@ -196,6 +196,8 @@ Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 20;
 Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
 Blocks.swarmer.requirements = ItemStack.with(Items.graphite, 210, Items.titanium, 210, Items.silicon, 180, Items.plastanium, 270);
+
+Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).damage = 500;
 
 Blocks.salvo.targetAir = false;
 Blocks.salvo.ammoTypes.get(Items.copper).collidesAir = false;
