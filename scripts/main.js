@@ -69,6 +69,7 @@ UnitTypes.quad.health = 1000;
 UnitTypes.quad.payloadCapacity = 0;
 UnitTypes.quad.speed = (20 / 7.5);
 UnitTypes.quad.constructor = UnitTypes.flare.constructor;
+UnitTypes.quad.weapons.get(0).bullet.damage = 200
 UnitTypes.quad.weapons.get(0).bullet.splashDamage = 1000;
 UnitTypes.quad.weapons.get(0).reload = 300;
 
@@ -87,6 +88,7 @@ UnitTypes.horizon.weapons.get(0).shoot.shots = 10;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
 UnitTypes.horizon.weapons.get(0).reload = (60 * 5);
 UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
+UnitTypes.horizon.weapons.get(0).bullet.damage = 3
 
 UnitTypes.zenith.health = 400;
 UnitTypes.zenith.speed = (26 / 7.5);
@@ -146,6 +148,7 @@ Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 20;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 20;
 Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
+Blocks.swarmer.requirements = ItemStack.with(Items.graphite, 210, Items.titanium, 210, Items.silicon, 180, Items.plastanium, 270);
 
 Blocks.salvo.targetAir = false;
 Blocks.salvo.ammoTypes.get(Items.copper).collidesAir = false;
@@ -174,6 +177,7 @@ Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).lightningType = lightningBul;
 Blocks.cyclone.ammoTypes.get(Items.blastCompound).collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.blastCompound).splashDamage = 200;
 Blocks.cyclone.limitRange();
+Blocks.cyclone.requirements = ItemStack.with(Items.copper, 1000, Items.titanium, 500,  Items.plastanium, 240);
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
