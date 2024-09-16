@@ -17,6 +17,27 @@ UnitTypes.mace.speed = 0.7;
 UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
 
+let fortressAAWeapon = new Weapon("missiles-mount");
+fortressAAWeapon.bullet = new BasicBulletType(5, 10); // syntax speed: (speed, dmg)
+fortressAAWeapon.shootSound = Sounds.shootSnap;
+fortressAAWeapon.mirror = false;
+fortressAAWeapon.rotate = true;
+fortressAAWeapon.top = true;
+fortressAAWeapon.x = 0;
+fortressAAWeapon.y = 5;
+fortressAAWeapon.shootY = 2;
+fortressAAWeapon.reload = 60;
+fortressAAWeapon.rotateSpeed = 5;
+fortressAAWeapon.bullet.width = 8;
+fortressAAWeapon.bullet.height = 10;
+fortressAAWeapon.bullet.weaveMag = 3.5;
+fortressAAWeapon.bullet.weaveScale = 4;
+fortressAAWeapon.bullet.trailWidth = 2;
+fortressAAWeapon.bullet.trailLength = 3;
+fortressAAWeapon.bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
+fortressAAWeapon.bullet.lifetime = (29 * 7.5) / 5;
+
+UnitTypes.fortress.weapons.add(fortressAAWeapon);
 UnitTypes.fortress.health = 500;
 
 UnitTypes.scepter.health = 4000;
