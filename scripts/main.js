@@ -18,13 +18,13 @@ UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
 
 let fortressAAWeapon = new Weapon("missiles-mount");
-fortressAAWeapon.bullet = new BasicBulletType(5, 10); // syntax speed: (speed, dmg)
+fortressAAWeapon.bullet = new BasicBulletType(5, 25); // syntax speed: (speed, dmg)
 fortressAAWeapon.shootSound = Sounds.shootSnap;
 fortressAAWeapon.mirror = false;
 fortressAAWeapon.rotate = true;
 fortressAAWeapon.top = true;
 fortressAAWeapon.x = 0;
-fortressAAWeapon.y = 5;
+fortressAAWeapon.y = -4;
 fortressAAWeapon.shootY = 2;
 fortressAAWeapon.reload = 60;
 fortressAAWeapon.rotateSpeed = 5;
@@ -35,18 +35,26 @@ fortressAAWeapon.bullet.weaveScale = 4;
 fortressAAWeapon.bullet.trailWidth = 2;
 fortressAAWeapon.bullet.trailLength = 3;
 fortressAAWeapon.bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
-fortressAAWeapon.bullet.lifetime = (29 * 7.5) / 5;
+fortressAAWeapon.bullet.lifetime = (32 * 7.5) / 5;
 
 UnitTypes.fortress.weapons.add(fortressAAWeapon);
 UnitTypes.fortress.health = 500;
+UnitTypes.fortress.range = (32*8);
+UnitTypes.fortress.weapons.get(0).bullet.splashDamageRadius = 8
 
 UnitTypes.scepter.health = 4000;
 UnitTypes.scepter.speed = (3.22 / 7.5);
+UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
+UnitTypes.scepter.weapons.get(2).bullet.collidesGround = false;
 
 UnitTypes.reign.health =75000;
+UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.reign.targetAir = false;
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.quasar.targetAir = false;
+UnitTypes.quasar.abilities.get(0).radius = 80
 
 //laser bullets are pain to wrap your mind around
 UnitTypes.vela.targetAir = false;
@@ -62,7 +70,8 @@ UnitTypes.corvus.health = 10000;
 
 UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 300;
+UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 200;
+UnitTypes.crawler.range = (16);
 
 let atraxAAWeapon = new Weapon();
 let atraxAAPart = new RegionPart("quell-missile")
@@ -129,6 +138,7 @@ UnitTypes.poly.weapons.get(0).bullet.damage = 25;
 UnitTypes.poly.weapons.get(0).bullet.speed = 4 * 1.5;
 UnitTypes.poly.weapons.get(0).bullet.lifetime = 50 / 1.5;
 UnitTypes.poly.weapons.get(0).bullet.collidesGround = false;
+UnitTypes.poly.weapons.get(0).bullet.healPercent = 0;
 UnitTypes.poly.health = 200;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
 UnitTypes.poly.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
@@ -178,7 +188,7 @@ UnitTypes.sei.weapons.get(0).bullet.maxRange = 30;
 UnitTypes.omura.health = 15000;
 UnitTypes.omura.weapons.get(0).bullet.damage = 2500;
 
-UnitTypes.aegires.health = 3000;
+UnitTypes.aegires.health = 1200;
 
 UnitTypes.navanax.health = 60000;
 UnitTypes.navanax.weapons.get(0).bullet.collidesAir = false;
