@@ -40,7 +40,7 @@ fortressAAWeapon.bullet.lifetime = (32 * 7.5) / 5;
 UnitTypes.fortress.weapons.add(fortressAAWeapon);
 UnitTypes.fortress.health = 500;
 UnitTypes.fortress.range = (32*8);
-UnitTypes.fortress.weapons.get(0).bullet.splashDamageRadius = 8
+UnitTypes.fortress.weapons.get(0).bullet.splashDamageRadius = 24
 
 UnitTypes.scepter.health = 4000;
 UnitTypes.scepter.speed = (3.22 / 7.5);
@@ -132,7 +132,7 @@ UnitTypes.arkyid.targetAir = false;
 UnitTypes.arkyid.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(1).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(2).bullet.collidesAir = false;
-UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 16
+UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28
 UnitTypes.arkyid.health = 4000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
@@ -246,7 +246,7 @@ Blocks.swarmer.ammoTypes.get(Items.blastCompound).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).speed = 7.4;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 45;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 10;
-Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 16;
+Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 28;
 Blocks.swarmer.range = 360;
 Blocks.swarmer.limitRange();
 Blocks.swarmer.requirements = ItemStack.with(Items.graphite, 210, Items.titanium, 210, Items.silicon, 180, Items.plastanium, 270);
