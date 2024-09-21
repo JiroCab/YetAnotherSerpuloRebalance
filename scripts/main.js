@@ -296,23 +296,24 @@ Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
 
 Blocks.exponentialReconstructor.constructTime = 60 * 60 * (1.5 / 2);
-Blocks.exponentialReconstructor.capacities[10] = 325 * 2;
-Blocks.exponentialReconstructor.capacities[9] = 425 * 2;
-Blocks.exponentialReconstructor.capacities[6] = 375 * 2;
 let expoCons = new ConsumeItems(ItemStack.with(Items.silicon, (850 / 2), Items.titanium, (750 / 2), Items.plastanium, (650/ 2)));
 Blocks.exponentialReconstructor.requirements = ItemStack.with(Items.lead, 1200, Items.titanium, 1000, Items.thorium, 650, Items.silicon, 700,  Items.plastanium, 250);
 
 Blocks.tetrativeReconstructor.constructTime = 60 * 60 * (4 * 2);
-Blocks.tetrativeReconstructor.capacities[12] = 2000;
-Blocks.tetrativeReconstructor.capacities[11] = 1400;
-Blocks.tetrativeReconstructor.capacities[10] = 2400;
-Blocks.tetrativeReconstructor.capacities[9] = 4000;
 let tetrCons = new ConsumeItems(ItemStack.with(Items.silicon, (1000 * 2), Items.plastanium, (600 * 2), Items.surgeAlloy, (500 * 2), Items.phaseFabric, (350 * 2)));
 
 function postLoadContent(){
 	//Work around since no easier way to do this that i know off -Rushie
-	Blocks.exponentialReconstructor.consumers[1] = expoCons;	
+	Blocks.exponentialReconstructor.consumers[1] = expoCons;
+	Blocks.exponentialReconstructor.capacities[10] = (325 * 2);
+	Blocks.exponentialReconstructor.capacities[9] = (425 * 2);
+	Blocks.exponentialReconstructor.capacities[6] = (375 * 2);
+	
 	Blocks.tetrativeReconstructor.consumers[1] = tetrCons;	
+	Blocks.tetrativeReconstructor.capacities[12] = 2000;
+	Blocks.tetrativeReconstructor.capacities[11] = 1400;
+	Blocks.tetrativeReconstructor.capacities[10] = 2400;
+	Blocks.tetrativeReconstructor.capacities[9] = 4000;
 }
 
 //haha forgot to make some changes load also on dedicated servers
