@@ -18,7 +18,7 @@ UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
 
 let fortressAAWeapon = new Weapon("missiles-mount");
-fortressAAWeapon.bullet = new BasicBulletType(5, 25); // syntax speed: (speed, dmg)
+fortressAAWeapon.bullet = new BasicBulletType(5, 18); // syntax speed: (speed, dmg)
 fortressAAWeapon.shootSound = Sounds.shootSnap;
 fortressAAWeapon.mirror = false;
 fortressAAWeapon.rotate = true;
@@ -158,11 +158,12 @@ UnitTypes.poly.weapons.get(0).bullet.damage = 25;
 UnitTypes.poly.weapons.get(0).bullet.speed = 4 * 1.5;
 UnitTypes.poly.weapons.get(0).bullet.lifetime = 50 / 1.5;
 UnitTypes.poly.weapons.get(0).bullet.collidesGround = false;
-UnitTypes.poly.weapons.get(0).bullet.healPercent = 0;
+UnitTypes.poly.weapons.get(0).bullet.healPercent = 0.01;
 UnitTypes.poly.health = 200;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
 UnitTypes.poly.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.poly.canHeal = true;
+UnitTypes.poly.weapons.get(0).bullet.absorbable = false;
 
 UnitTypes.quad.health = 1000;
 UnitTypes.quad.payloadCapacity = 0;
@@ -170,6 +171,9 @@ UnitTypes.quad.speed = (20 / 7.5);
 UnitTypes.quad.constructor = UnitTypes.flare.constructor;
 UnitTypes.quad.weapons.get(0).bullet.damage = 400;												 
 UnitTypes.quad.weapons.get(0).bullet.splashDamage = 1000;
+UnitTypes.quad.weapons.get(0).bullet.homingPower = 100
+UnitTypes.quad.weapons.get(0).bullet.homingRange = 100
+UnitTypes.quad.weapons.get(0).bullet.speed = 0.5
 UnitTypes.quad.weapons.get(0).reload = 300;
 
 UnitTypes.oct.health = 12000;
@@ -187,7 +191,8 @@ UnitTypes.horizon.weapons.get(0).shoot.shots = 10;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
 UnitTypes.horizon.weapons.get(0).reload = (60 * 5);
 UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
-UnitTypes.horizon.weapons.get(0).bullet.damage = 3												  
+UnitTypes.horizon.weapons.get(0).bullet.damage = 5;
+UnitTypes.horizon.weapons.get(0).bullet.splashDamageRadius = 32;	
 
 UnitTypes.zenith.health = 400;
 UnitTypes.zenith.speed = (26 / 7.5);
