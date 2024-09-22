@@ -36,6 +36,7 @@ fortressAAWeapon.bullet.trailWidth = 2;
 fortressAAWeapon.bullet.trailLength = 3;
 fortressAAWeapon.bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 fortressAAWeapon.bullet.lifetime = (32 * 7.5) / 5;
+fortressAAWeapon.bullet.collidesGround = false;
 
 UnitTypes.fortress.weapons.add(fortressAAWeapon);
 UnitTypes.fortress.health = 500;
@@ -49,7 +50,7 @@ UnitTypes.scepter.weapons.get(0).bullet.damage = 100;
 UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
 UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(1).shootSound = Sounds.shootSnap;
-UnitTypes.scepter.weapons.get(1).bullet.damage = 15;
+UnitTypes.scepter.weapons.get(1).bullet.damage = 18;
 UnitTypes.scepter.weapons.get(1).bullet.weaveMag = 3.5;
 UnitTypes.scepter.weapons.get(1).bullet.weaveScale = 4;
 UnitTypes.scepter.weapons.get(1).bullet.trailWidth = 2;
@@ -59,7 +60,7 @@ UnitTypes.scepter.weapons.get(1).bullet.lifetime = (24 * 7.5) / 5;
 UnitTypes.scepter.weapons.get(1).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 UnitTypes.scepter.weapons.get(2).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(2).shootSound = Sounds.shootSnap;
-UnitTypes.scepter.weapons.get(2).bullet.damage = 15;
+UnitTypes.scepter.weapons.get(2).bullet.damage = 18;
 UnitTypes.scepter.weapons.get(2).bullet.weaveMag = 3.5;
 UnitTypes.scepter.weapons.get(2).bullet.weaveScale = 4;
 UnitTypes.scepter.weapons.get(2).bullet.trailWidth = 2;
@@ -110,11 +111,11 @@ atraxAAWeapon.rotate = true;
 atraxAAWeapon.x = 0;
 atraxAAWeapon.y = 2;
 atraxAAWeapon.shootY = 2;
-atraxAAWeapon.reload = 18;
+atraxAAWeapon.reload = 180;
 atraxAAWeapon.shootSound = Sounds.shootSnap;
 atraxAAWeapon.bullet.lifetime = 30;
-atraxAAWeapon.bullet.splashDamage = 10 * 1.5;
-atraxAAWeapon.bullet.splashDamageRadius = 10;
+atraxAAWeapon.bullet.splashDamage = 15;
+atraxAAWeapon.bullet.splashDamageRadius = 25;
 
 UnitTypes.atrax.hitSize = 11;
 UnitTypes.atrax.range = 110;
@@ -158,12 +159,13 @@ UnitTypes.poly.weapons.get(0).bullet.damage = 25;
 UnitTypes.poly.weapons.get(0).bullet.speed = 4 * 1.5;
 UnitTypes.poly.weapons.get(0).bullet.lifetime = 50 / 1.5;
 UnitTypes.poly.weapons.get(0).bullet.collidesGround = false;
+UnitTypes.poly.weapons.get(0).bullet.absorbable = false;
 UnitTypes.poly.weapons.get(0).bullet.healPercent = 0.01;
 UnitTypes.poly.health = 200;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
 UnitTypes.poly.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.poly.canHeal = true;
-UnitTypes.poly.weapons.get(0).bullet.absorbable = false;
+
 
 UnitTypes.quad.health = 1000;
 UnitTypes.quad.payloadCapacity = 0;
@@ -187,27 +189,22 @@ UnitTypes.flare.weapons.get(0).bullet.homingPower = 0.04;
 
 UnitTypes.horizon.health = 100;
 UnitTypes.horizon.speed = (20 / 7.5);
-UnitTypes.horizon.weapons.get(0).shoot.shots = 10;
+UnitTypes.horizon.weapons.get(0).shoot.shots = 8;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
 UnitTypes.horizon.weapons.get(0).reload = (60 * 5);
 UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
-UnitTypes.horizon.weapons.get(0).bullet.damage = 5;
+UnitTypes.horizon.weapons.get(0).bullet.damage = 3;
 UnitTypes.horizon.weapons.get(0).bullet.splashDamageRadius = 32;	
 
 UnitTypes.zenith.health = 400;
 UnitTypes.zenith.speed = (26 / 7.5);
 UnitTypes.zenith.range = 280;
-UnitTypes.zenith.weapons.get(0).inaccuracy = 0;
-UnitTypes.zenith.weapons.get(0).bullet = new SapBulletType();
 UnitTypes.zenith.weapons.get(0).bullet.collidesGround = false;
-UnitTypes.zenith.weapons.get(0).bullet.damage = 65;
-UnitTypes.zenith.weapons.get(0).bullet.length = 240;
-UnitTypes.zenith.weapons.get(0).bullet.pierceCap = -1;
-UnitTypes.zenith.weapons.get(0).bullet.lifetime = 10;
-UnitTypes.zenith.weapons.get(0).bullet.sapStrength = 0;
-UnitTypes.zenith.weapons.get(0).bullet.width = 0.55;
-UnitTypes.zenith.weapons.get(0).bullet.hitColor = Pal.bulletYellowBack;
-UnitTypes.zenith.weapons.get(0).bullet.color = Pal.bulletYellowBack;
+UnitTypes.zenith.weapons.get(0).bullet.absorbable = false;
+UnitTypes.zenith.weapons.get(0).bullet.keepVelocity = true;
+UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 2);
+UnitTypes.zenith.weapons.get(0).bullet.damage = 40;
+UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 6) * 2 * 7.5;
 
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
@@ -257,7 +254,7 @@ Blocks.swarmer.ammoTypes.get(Items.blastCompound).speed = 7.4;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).damage = 90;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamage = 10;
 Blocks.swarmer.ammoTypes.get(Items.blastCompound).splashDamageRadius = 28;
-Blocks.swarmer.range = 360;
+Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
 Blocks.swarmer.requirements = ItemStack.with(Items.graphite, 210, Items.titanium, 210, Items.silicon, 180, Items.plastanium, 270);
 
@@ -274,7 +271,7 @@ Blocks.fuse.targetAir = false;
 Blocks.fuse.ammoTypes.get(Items.thorium).collidesAir = false;
 Blocks.fuse.ammoTypes.get(Items.titanium).collidesAir = false;
 
-Blocks.cyclone.range = 224;
+Blocks.cyclone.range = 240;
 Blocks.cyclone.targetGround = false;
 Blocks.cyclone.ammoTypes.get(Items.metaglass).collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullet.damage = 50;
