@@ -161,11 +161,16 @@ UnitTypes.poly.weapons.get(0).bullet.lifetime = 50 / 1.5;
 UnitTypes.poly.weapons.get(0).bullet.collidesGround = false;
 UnitTypes.poly.weapons.get(0).bullet.absorbable = false;
 UnitTypes.poly.weapons.get(0).bullet.healPercent = 0.01;
-UnitTypes.poly.health = 200;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
 UnitTypes.poly.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.poly.canHeal = true;
 
+UnitTypes.mega.health = 1200;
+UnitTypes.mega.armor = 9;
+UnitTypes.mega.itemCapacity = 90;
+UnitTypes.mega.speed = (17 / 7.5);
+UnitTypes.mega.weapons.get(0).bullet.healPercent = 1;
+UnitTypes.mega.weapons.get(1).bullet.healPercent = 0.8;
 
 UnitTypes.quad.health = 1000;
 UnitTypes.quad.payloadCapacity = 0;
@@ -203,7 +208,7 @@ UnitTypes.zenith.weapons.get(0).bullet.collidesGround = false;
 UnitTypes.zenith.weapons.get(0).bullet.absorbable = false;
 UnitTypes.zenith.weapons.get(0).bullet.keepVelocity = true;
 UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 2);
-UnitTypes.zenith.weapons.get(0).bullet.damage = 40;
+UnitTypes.zenith.weapons.get(0).bullet.damage = 45;
 UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 6) * 2 * 7.5;
 
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
