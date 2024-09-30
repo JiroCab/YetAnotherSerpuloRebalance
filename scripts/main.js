@@ -48,7 +48,7 @@ UnitTypes.scepter.speed = (3.22 / 7.5);
 UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.scepter.weapons.get(0).bullet.damage = 100;
 UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
-UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 7.5) / 5;
+UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 7.5) / 8;
 UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(1).shootSound = Sounds.shootSnap;
 UnitTypes.scepter.weapons.get(1).bullet.damage = 25;
@@ -72,7 +72,7 @@ UnitTypes.scepter.weapons.get(2).bullet.homingPower = 0.1; //a bit higher so it 
 
 UnitTypes.reign.health =75000;
 UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 7.5) / 5;
+UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 7.5) / 13;
 UnitTypes.reign.targetAir = false;
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
@@ -136,7 +136,7 @@ UnitTypes.arkyid.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(1).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(2).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28
-UnitTypes.arkyid.health = 3100;
+UnitTypes.arkyid.health = 3000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
@@ -300,7 +300,7 @@ Blocks.cyclone.requirements = ItemStack.with(Items.copper, 1000, Items.titanium,
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
 
-Blocks.exponentialReconstructor.constructTime = 60 * 60 * (1.5 / 2);
+Blocks.exponentialReconstructor.constructTime = 60 * 60 * (1);
 Blocks.exponentialReconstructor.requirements = ItemStack.with(Items.lead, 1200, Items.titanium, 1000, Items.thorium, 650, Items.silicon, 700,  Items.plastanium, 250);
 
 Blocks.tetrativeReconstructor.constructTime = 60 * 60 * (4 * 2);
