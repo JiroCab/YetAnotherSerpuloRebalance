@@ -48,6 +48,7 @@ UnitTypes.scepter.speed = (3.22 / 7.5);
 UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.scepter.weapons.get(0).bullet.damage = 100;
 UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
+UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 7.5) / 5;
 UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(1).shootSound = Sounds.shootSnap;
 UnitTypes.scepter.weapons.get(1).bullet.damage = 25;
@@ -56,7 +57,7 @@ UnitTypes.scepter.weapons.get(1).bullet.weaveScale = 4;
 UnitTypes.scepter.weapons.get(1).bullet.trailWidth = 2;
 UnitTypes.scepter.weapons.get(1).bullet.trailLength = 3;
 UnitTypes.scepter.weapons.get(1).bullet.speed = 5;
-UnitTypes.scepter.weapons.get(1).bullet.lifetime = (24 * 7.5) / 5;
+UnitTypes.scepter.weapons.get(1).bullet.lifetime = (32 * 7.5) / 5;
 UnitTypes.scepter.weapons.get(1).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 UnitTypes.scepter.weapons.get(2).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(2).shootSound = Sounds.shootSnap;
@@ -66,11 +67,12 @@ UnitTypes.scepter.weapons.get(2).bullet.weaveScale = 4;
 UnitTypes.scepter.weapons.get(2).bullet.trailWidth = 2;
 UnitTypes.scepter.weapons.get(2).bullet.trailLength = 3;
 UnitTypes.scepter.weapons.get(2).bullet.speed = 5;
-UnitTypes.scepter.weapons.get(2).bullet.lifetime = (24 * 7.5) / 5;
+UnitTypes.scepter.weapons.get(2).bullet.lifetime = (32 * 7.5) / 5;
 UnitTypes.scepter.weapons.get(2).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 
 UnitTypes.reign.health =75000;
 UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 7.5) / 5;
 UnitTypes.reign.targetAir = false;
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
@@ -113,8 +115,8 @@ atraxAAWeapon.y = 2;
 atraxAAWeapon.shootY = 2;
 atraxAAWeapon.reload = 180;
 atraxAAWeapon.shootSound = Sounds.shootSnap;
-atraxAAWeapon.bullet.lifetime = 30;
-atraxAAWeapon.bullet.splashDamage = 15;
+atraxAAWeapon.bullet.lifetime = 40;
+atraxAAWeapon.bullet.splashDamage = 40;
 atraxAAWeapon.bullet.splashDamageRadius = 25;
 
 UnitTypes.atrax.hitSize = 11;
@@ -134,7 +136,7 @@ UnitTypes.arkyid.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(1).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(2).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28
-UnitTypes.arkyid.health = 4000;
+UnitTypes.arkyid.health = 3100;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
@@ -211,6 +213,7 @@ UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 2);
 UnitTypes.zenith.weapons.get(0).bullet.damage = 45;
 UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 6) * 2 * 7.5;
 
+UnitTypes.antumbra.health = 5000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 
@@ -305,12 +308,12 @@ Blocks.tetrativeReconstructor.constructTime = 60 * 60 * (4 * 2);
 function postLoadContent(){
 	//Work around since no easier way to do this that i know off -Rushie
 	let expoCons = Blocks.exponentialReconstructor.findConsumer(c => c instanceof  ConsumeItems);
-	expoCons.items[0] = new ItemStack(Items.silicon, (850 /2));
-	expoCons.items[1] = new ItemStack(Items.titanium, (750/2));
-	expoCons.items[2] = new ItemStack(Items.plastanium, (650/2));
-	Blocks.exponentialReconstructor.capacities[10] = (325 * 2);
-	Blocks.exponentialReconstructor.capacities[9] = (425 * 2);
-	Blocks.exponentialReconstructor.capacities[6] = (375 * 2);
+	expoCons.items[0] = new ItemStack(Items.silicon, (850*2/3));
+	expoCons.items[1] = new ItemStack(Items.titanium, (750*2/3));
+	expoCons.items[2] = new ItemStack(Items.plastanium, (650*2/3));
+	Blocks.exponentialReconstructor.capacities[10] = (650*4/3);
+	Blocks.exponentialReconstructor.capacities[9] = (850*4/3);
+	Blocks.exponentialReconstructor.capacities[6] = (750*4/3);
 	
 	let tetrCons = Blocks.tetrativeReconstructor.findConsumer(c => c instanceof  ConsumeItems);
 	tetrCons.items[0] = new ItemStack(Items.silicon, (1000 * 2));
