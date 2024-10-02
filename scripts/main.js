@@ -18,24 +18,24 @@ UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
 
 let fortressAAWeapon = new Weapon("missiles-mount");
-fortressAAWeapon.bullet = new BasicBulletType(5, 90); // syntax speed: (speed, dmg)
-fortressAAWeapon.shootSound = Sounds.shootSnap;
+fortressAAWeapon.bullet = new BasicBulletType(5, 150); // syntax speed: (speed, dmg)
+fortressAAWeapon.shootSound = Sounds.dullExplosion;
 fortressAAWeapon.mirror = false;
 fortressAAWeapon.rotate = true;
 fortressAAWeapon.top = true;
 fortressAAWeapon.x = 0;
 fortressAAWeapon.y = -4;
 fortressAAWeapon.shootY = 2;
-fortressAAWeapon.reload = 180;
+fortressAAWeapon.reload = 240;
 fortressAAWeapon.rotateSpeed = 5;
-fortressAAWeapon.bullet.width = 8;
-fortressAAWeapon.bullet.height = 10;
+fortressAAWeapon.bullet.width = 10;
+fortressAAWeapon.bullet.height = 13;
 fortressAAWeapon.bullet.weaveMag = 3.5;
 fortressAAWeapon.bullet.weaveScale = 4;
-fortressAAWeapon.bullet.trailWidth = 2;
-fortressAAWeapon.bullet.trailLength = 3;
+fortressAAWeapon.bullet.trailWidth = 3;
+fortressAAWeapon.bullet.trailLength = 4;
 fortressAAWeapon.bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
-fortressAAWeapon.bullet.lifetime = (32 * 7.5) / 5;
+fortressAAWeapon.bullet.lifetime = (32 * 8) / 5;
 fortressAAWeapon.bullet.collidesGround = false;
 
 UnitTypes.fortress.weapons.add(fortressAAWeapon);
@@ -48,7 +48,7 @@ UnitTypes.scepter.speed = (3.22 / 7.5);
 UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.scepter.weapons.get(0).bullet.damage = 100;
 UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
-UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 7.5) / 8;
+UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 8) / 8;
 UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(1).shootSound = Sounds.shootSnap;
 UnitTypes.scepter.weapons.get(1).bullet.damage = 25;
@@ -57,7 +57,7 @@ UnitTypes.scepter.weapons.get(1).bullet.weaveScale = 4;
 UnitTypes.scepter.weapons.get(1).bullet.trailWidth = 2;
 UnitTypes.scepter.weapons.get(1).bullet.trailLength = 3;
 UnitTypes.scepter.weapons.get(1).bullet.speed = 5;
-UnitTypes.scepter.weapons.get(1).bullet.lifetime = (32 * 7.5) / 5;
+UnitTypes.scepter.weapons.get(1).bullet.lifetime = (32 * 8) / 5;
 UnitTypes.scepter.weapons.get(1).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 UnitTypes.scepter.weapons.get(2).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(2).shootSound = Sounds.shootSnap;
@@ -67,12 +67,12 @@ UnitTypes.scepter.weapons.get(2).bullet.weaveScale = 4;
 UnitTypes.scepter.weapons.get(2).bullet.trailWidth = 2;
 UnitTypes.scepter.weapons.get(2).bullet.trailLength = 3;
 UnitTypes.scepter.weapons.get(2).bullet.speed = 5;
-UnitTypes.scepter.weapons.get(2).bullet.lifetime = (32 * 7.5) / 5;
+UnitTypes.scepter.weapons.get(2).bullet.lifetime = (32 * 8) / 5;
 UnitTypes.scepter.weapons.get(2).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 
 UnitTypes.reign.health =75000;
 UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 7.5) / 13;
+UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 8) / 13;
 UnitTypes.reign.targetAir = false;
 
 UnitTypes.pulsar.mineTier = -1;
@@ -134,7 +134,7 @@ UnitTypes.atrax.weapons.add(atraxAAWeapon);
 
 
 //Unrelated, Rushie cannot spell spriroct
-UnitTypes.spiroct.speed = (5 / 7.5);
+UnitTypes.spiroct.speed = (7 / 7.5);
 UnitTypes.spiroct.targetAir = false;
 UnitTypes.spiroct.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.spiroct.weapons.get(1).bullet.collidesAir = false;
@@ -165,7 +165,7 @@ polyHeal.bullet.healPercent = 5.5;
 
 UnitTypes.poly.weapons.add(polyHeal);
 UnitTypes.poly.weapons.get(0).velocityRnd = 0;
-UnitTypes.poly.weapons.get(0).bullet.damage = 25;
+UnitTypes.poly.weapons.get(0).bullet.damage = 40;
 UnitTypes.poly.weapons.get(0).bullet.speed = 4 * 1.5;
 UnitTypes.poly.weapons.get(0).bullet.lifetime = 50 / 1.5;
 UnitTypes.poly.weapons.get(0).bullet.collidesGround = false;
@@ -219,7 +219,7 @@ UnitTypes.zenith.weapons.get(0).bullet.absorbable = false;
 UnitTypes.zenith.weapons.get(0).bullet.keepVelocity = true;
 UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 2);
 UnitTypes.zenith.weapons.get(0).bullet.damage = 45;
-UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 6) * 2 * 7.5;
+UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 6) * 2 * 8;
 
 UnitTypes.antumbra.health = 5000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
