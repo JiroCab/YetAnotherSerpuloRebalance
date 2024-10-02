@@ -75,9 +75,17 @@ UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 7.5) / 13;
 UnitTypes.reign.targetAir = false;
 
+UnitTypes.pulsar.mineTier = -1;
+UnitTypes.pulsar.mineSpeed = 1;
+UnitTypes.pulsar.abilities.get(0).range = 70; //range +10, reload -0.5 inexchange to stop mining
+UnitTypes.pulsar.abilities.get(0).reload = 60 * 4.5;
+
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.quasar.targetAir = false;
-UnitTypes.quasar.abilities.get(0).radius = 80
+UnitTypes.quasar.abilities.get(0).radius = 80; 
+UnitTypes.quasar.abilities.get(0).regen = 0.5; //+0.2 regen reload inexchange to stop mining
+UnitTypes.quasar.mineTier = -1;
+UnitTypes.quasar.mineSpeed = 1;
 
 //laser bullets are pain to wrap your mind around
 UnitTypes.vela.targetAir = false;
@@ -236,6 +244,7 @@ UnitTypes.navanax.weapons.get(3).bullet.collidesAir = false;
 Blocks.duo.ammoTypes.get(Items.copper).ammoMultiplier = 4;
 Blocks.duo.ammoTypes.get(Items.graphite).ammoMultiplier = 8;
 Blocks.duo.ammoTypes.get(Items.silicon).ammoMultiplier = 10;
+Blocks.duo.health = 269; //funny
 
 Blocks.swarmer.targetGround = false;
 Blocks.swarmer.inaccuracy = 2;
