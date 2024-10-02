@@ -46,6 +46,7 @@ UnitTypes.fortress.weapons.get(0).bullet.splashDamageRadius = 24
 UnitTypes.scepter.health = 4000;
 UnitTypes.scepter.speed = (3.22 / 7.5);
 UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.scepter.weapons.get(0).shoot.shots = 2
 UnitTypes.scepter.weapons.get(0).bullet.damage = 100;
 UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
 UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 8) / 8;
