@@ -50,7 +50,7 @@ UnitTypes.scepter.weapons.get(0).shoot.shots = 2
 UnitTypes.scepter.weapons.get(0).bullet.damage = 100;
 UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
 UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 8) / 8;
-UnitTypes.scepter.weapons.get(0).shootCone = 15; //incrased the shoot cone to reduce ai dumbness
+UnitTypes.scepter.weapons.get(0).shootCone = 6.9; //incrased the shoot cone to reduce ai dumbness
 UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(1).shootSound = Sounds.shootSnap;
 UnitTypes.scepter.weapons.get(1).bullet.damage = 25;
@@ -75,7 +75,7 @@ UnitTypes.scepter.weapons.get(2).bullet.homingPower = 0.1; //a bit higher so it 
 UnitTypes.reign.health =75000;
 UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 8) / 13;
-UnitTypes.reign.weapons.get(0).shootCone = 15; //incrased the shoot cone to reduce ai dumbness
+UnitTypes.reign.weapons.get(0).shootCone = 6.9; //incrased the shoot cone to reduce ai dumbness
 UnitTypes.reign.targetAir = false;
 
 UnitTypes.pulsar.mineTier = -1;
