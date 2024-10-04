@@ -80,13 +80,10 @@ UnitTypes.reign.targetAir = false;
 
 UnitTypes.pulsar.mineTier = -1;
 UnitTypes.pulsar.mineSpeed = 1;
-UnitTypes.pulsar.abilities.get(0).range = 70; //range +10, reload -0.5 inexchange to stop mining
-UnitTypes.pulsar.abilities.get(0).reload = 60 * 4.5;
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.quasar.targetAir = false;
 UnitTypes.quasar.abilities.get(0).radius = 80; 
-UnitTypes.quasar.abilities.get(0).regen = 0.5; //+0.2 regen reload inexchange to stop mining
 UnitTypes.quasar.mineTier = -1;
 UnitTypes.quasar.mineSpeed = 1;
 
@@ -152,6 +149,12 @@ UnitTypes.arkyid.health = 3000;
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
 UnitTypes.toxopid.weapons.get(0).bullet.collidesAir = false;
+
+let monoAblity = new RegenAbility();
+monoAblity.percentAmount = 1 / (300 * 60) * 100; //full hp in 5mins, this is 0.005555557~ and why it doesnt add % in the databse bc of the > 0.01 check lul
+
+UnitTypes.mono.abilities.add(monoAblity);
+UnitTypes.mono.health = 200;
 
 let polyHeal = new RepairBeamWeapon("repair-beam-weapon-center");
 polyHeal.bullet = new BulletType(); //idk this is the convetion and prob to not edit Bullets.placeholder
