@@ -16,6 +16,8 @@ lightningBul.collidesAir = true;
 UnitTypes.mace.speed = 0.7; 
 UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.mace.weapons.get(0).bullet.pierceBuilding = false;
+UnitTypes.mace.weapons.get(0).bullet.buildingDamageMultiplier = 0.75;
 
 let fortressAAWeapon = new Weapon("missiles-mount");
 fortressAAWeapon.bullet = new BasicBulletType(5, 150); // syntax speed: (speed, dmg)
@@ -91,6 +93,7 @@ UnitTypes.quasar.mineSpeed = 1;
 UnitTypes.vela.targetAir = false;
 UnitTypes.vela.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.vela.weapons.get(0).bullet.damage = (200 / 12);
+UnitTypes.vela.weapons.get(0).bullet.buildingDamageMultiplier = 1.25;
 UnitTypes.vela.health = 3000;
 
 UnitTypes.corvus.targetAir = false;
@@ -246,6 +249,8 @@ UnitTypes.navanax.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.navanax.weapons.get(1).bullet.collidesAir = false;
 UnitTypes.navanax.weapons.get(2).bullet.collidesAir = false;
 UnitTypes.navanax.weapons.get(3).bullet.collidesAir = false;
+
+UnitTypes.beta.weapons.get(0).bullet.homingPower = 0.04;
 
 Blocks.duo.ammoTypes.get(Items.copper).ammoMultiplier = 4;
 Blocks.duo.ammoTypes.get(Items.graphite).ammoMultiplier = 8;
