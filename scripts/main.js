@@ -15,9 +15,10 @@ lightningBul.collidesAir = true;
 
 UnitTypes.mace.speed = 0.7; 
 UnitTypes.mace.targetAir = false;
+UnitTypes.mace.weapons.get(0).bullet.damage = 23;
+UnitTypes.mace.weapons.get(0).reload = 60 * 0.75;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.mace.weapons.get(0).bullet.pierceBuilding = false;
-UnitTypes.mace.weapons.get(0).bullet.buildingDamageMultiplier = 0.75;
 
 let fortressAAWeapon = new Weapon("missiles-mount");
 fortressAAWeapon.bullet = new BasicBulletType(5, 150); // syntax speed: (speed, dmg)
