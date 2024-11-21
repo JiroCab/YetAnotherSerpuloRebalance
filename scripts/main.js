@@ -104,7 +104,8 @@ UnitTypes.corvus.health = 10000;
 UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 200;
-UnitTypes.crawler.range = (16);
+UnitTypes.crawler.weapons.get(0).bullet.splashDamageRadius = 32;
+UnitTypes.crawler.range = (1);
 
 let atraxAAWeapon = new Weapon();
 let atraxAAPart = new RegionPart("quell-missile")
