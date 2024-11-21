@@ -315,7 +315,7 @@ Blocks.salvo.ammoTypes.get(Items.silicon).reloadMultiplier = 1.4;
 Blocks.salvo.ammoTypes.get(Items.pyratite).collidesAir = false;
 Blocks.salvo.ammoTypes.get(Items.pyratite).ammoMultiplier = 10;
 Blocks.salvo.ammoTypes.get(Items.pyratite).damage = 35;
-Blocks.salvo.scaledHealth = 500;
+Blocks.salvo.scaledHealth = 400;
 Blocks.salvo.range = 224;
 Blocks.salvo.limitRange();
 Blocks.salvo.reload = 240;
@@ -324,6 +324,11 @@ Blocks.salvo.ammoPerShot = 6;
 Blocks.salvo.shoot.shotDelay = 2;
 Blocks.salvo.requirements = ItemStack.with(Items.copper, 300, Items.graphite, 240, Items.titanium, 150);
 
+Blocks.parallax.range = 280;
+Blocks.parallax.status = StatusEffects.unmoving;
+Blocks.parallax.requirements = ItemStack.with(Items.silicon, 360, Items.titanium, 270, Items.graphite, 90);
+
+	
 Blocks.fuse.targetAir = false;
 Blocks.fuse.ammoTypes.get(Items.thorium).collidesAir = false;
 Blocks.fuse.ammoTypes.get(Items.titanium).collidesAir = false;
@@ -350,7 +355,7 @@ Blocks.ripple.shoot.shots = 30;
 Blocks.ripple.reload = 240;
 Blocks.ripple.ammoPerShot = 6;
 Blocks.ripple.scaledHealth = 300;
-Blocks.ripple.requirements = ItemStack.with(Items.copper, 600, Items.graphite, 540, Items.titanium, 240);	
+Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 810, Items.titanium, 720);	
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
