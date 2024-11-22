@@ -252,6 +252,12 @@ UnitTypes.navanax.weapons.get(3).bullet.collidesAir = false;
 
 UnitTypes.beta.weapons.get(0).bullet.homingPower = 0.04;
 
+Blocks.phaseWall.chanceDeflect = 40;
+Blocks.phaseWallLarge.chanceDeflect = 40;
+
+Blocks.surgeWall.armor = 20
+Blocks.surgeWallLarge.armor = 20
+
 Blocks.duo.targetAir = false;
 Blocks.duo.ammoTypes.get(Items.copper).collidesAir = false;
 Blocks.duo.ammoTypes.get(Items.copper).ammoMultiplier = 4;
@@ -303,27 +309,28 @@ Blocks.salvo.ammoTypes.get(Items.copper).ammoMultiplier = 5;
 Blocks.salvo.ammoTypes.get(Items.copper).damage = 20;
 Blocks.salvo.ammoTypes.get(Items.graphite).collidesAir = false;
 Blocks.salvo.ammoTypes.get(Items.graphite).ammoMultiplier = 6;
-Blocks.salvo.ammoTypes.get(Items.graphite).damage = 55;
-Blocks.salvo.ammoTypes.get(Items.graphite).reloadMultiplier = 0.8;
+Blocks.salvo.ammoTypes.get(Items.graphite).damage = 50;
+Blocks.salvo.ammoTypes.get(Items.graphite).reloadMultiplier = 0.7;
 Blocks.salvo.ammoTypes.get(Items.thorium).collidesAir = false;
 Blocks.salvo.ammoTypes.get(Items.thorium).ammoMultiplier = 5;
 Blocks.salvo.ammoTypes.get(Items.thorium).damage = 40;
 Blocks.salvo.ammoTypes.get(Items.silicon).collidesAir = false;
 Blocks.salvo.ammoTypes.get(Items.silicon).ammoMultiplier = 6;
 Blocks.salvo.ammoTypes.get(Items.silicon).damage = 30;
-Blocks.salvo.ammoTypes.get(Items.silicon).reloadMultiplier = 1.4;
+Blocks.salvo.ammoTypes.get(Items.silicon).reloadMultiplier = 1.3;
 Blocks.salvo.ammoTypes.get(Items.pyratite).collidesAir = false;
 Blocks.salvo.ammoTypes.get(Items.pyratite).ammoMultiplier = 10;
 Blocks.salvo.ammoTypes.get(Items.pyratite).damage = 35;
+Blocks.salvo.ammoTypes.get(Items.pyratite).splashDamage = 20;
 Blocks.salvo.scaledHealth = 400;
 Blocks.salvo.range = 240;
 Blocks.salvo.limitRange();
 Blocks.salvo.reload = 240;
-Blocks.salvo.shoot.shots = 15;
-Blocks.salvo.ammoPerShot = 6;
+Blocks.salvo.shoot.shots = 25;
+Blocks.salvo.ammoPerShot = 5;
 Blocks.salvo.shoot.shotDelay = 2;
 Blocks.salvo.consumeAmmoOnce = true;
-Blocks.salvo.requirements = ItemStack.with(Items.copper, 300, Items.graphite, 240, Items.titanium, 150);
+Blocks.salvo.requirements = ItemStack.with(Items.copper, 450, Items.graphite, 360, Items.titanium, 225);
 
 Blocks.parallax.range = 280;
 Blocks.parallax.status = StatusEffects.unmoving;
