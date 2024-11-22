@@ -360,7 +360,9 @@ Blocks.cyclone.ammoTypes.get(Items.blastCompound).splashDamage = 110;
 Blocks.cyclone.limitRange();
 Blocks.cyclone.requirements = ItemStack.with(Items.copper, 1000, Items.titanium, 500,  Items.plastanium, 240);																											  
 
-Blocks.ripple.shoot.shots = 30;
+Blocks.ripple.shoot.shots = 50;
+Blocks.ripple.shoot.shotDelay = 0.1;
+Blocks.ripple.velocityRnd = 0.3f;
 Blocks.ripple.reload = 240;
 Blocks.ripple.ammoPerShot = 6;
 Blocks.ripple.scaledHealth = 300;
