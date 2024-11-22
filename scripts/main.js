@@ -322,13 +322,14 @@ Blocks.salvo.ammoTypes.get(Items.pyratite).collidesAir = false;
 Blocks.salvo.ammoTypes.get(Items.pyratite).ammoMultiplier = 10;
 Blocks.salvo.ammoTypes.get(Items.pyratite).damage = 35;
 Blocks.salvo.ammoTypes.get(Items.pyratite).splashDamage = 20;
-Blocks.salvo.scaledHealth = 400;
+Blocks.salvo.scaledHealth = 500;
+Blocks.salvo.inaccuracy = 1;
 Blocks.salvo.range = 240;
 Blocks.salvo.limitRange();
 Blocks.salvo.reload = 240;
 Blocks.salvo.shoot.shots = 25;
 Blocks.salvo.ammoPerShot = 5;
-Blocks.salvo.shoot.shotDelay = 2;
+Blocks.salvo.shoot.shotDelay = 1.2;
 Blocks.salvo.consumeAmmoOnce = true;
 Blocks.salvo.requirements = ItemStack.with(Items.copper, 450, Items.graphite, 360, Items.titanium, 225);
 
