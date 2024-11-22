@@ -255,8 +255,8 @@ UnitTypes.beta.weapons.get(0).bullet.homingPower = 0.04;
 Blocks.phaseWall.chanceDeflect = 40;
 Blocks.phaseWallLarge.chanceDeflect = 40;
 
-Blocks.surgeWall.armor = 20
-Blocks.surgeWallLarge.armor = 20
+Blocks.surgeWall.armor = 20;
+Blocks.surgeWallLarge.armor = 20;
 
 Blocks.duo.targetAir = false;
 Blocks.duo.ammoTypes.get(Items.copper).collidesAir = false;
@@ -362,7 +362,7 @@ Blocks.cyclone.requirements = ItemStack.with(Items.copper, 1000, Items.titanium,
 
 Blocks.ripple.shoot.shots = 50;
 Blocks.ripple.shoot.shotDelay = 0.1;
-Blocks.ripple.velocityRnd = 0.3f;
+Blocks.ripple.velocityRnd = 0.3;
 Blocks.ripple.reload = 240;
 Blocks.ripple.ammoPerShot = 6;
 Blocks.ripple.scaledHealth = 300;
