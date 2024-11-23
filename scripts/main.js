@@ -252,8 +252,8 @@ UnitTypes.navanax.weapons.get(3).bullet.collidesAir = false;
 
 UnitTypes.beta.weapons.get(0).bullet.homingPower = 0.04;
 
-Blocks.phaseWall.chanceDeflect = 40;
-Blocks.phaseWallLarge.chanceDeflect = 40;
+Blocks.phaseWall.chanceDeflect = 60;
+Blocks.phaseWallLarge.chanceDeflect = 60;
 
 Blocks.surgeWall.armor = 20;
 Blocks.surgeWallLarge.armor = 20;
@@ -272,8 +272,10 @@ Blocks.duo.reload = 30;
 Blocks.duo.range = 190;
 Blocks.duo.limitRange();
 
+Blocks.scorch.armor = 5
+
 Blocks.swarmer.targetGround = false;
-Blocks.swarmer.inaccuracy = 2;
+Blocks.swarmer.inaccuracy = 4;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).collidesGround = false;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).speed = 7.4;
 Blocks.swarmer.ammoTypes.get(Items.surgeAlloy).damage = 70;
@@ -305,30 +307,30 @@ Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).damage = 500;
 
 Blocks.salvo.targetAir = false;
 Blocks.salvo.ammoTypes.get(Items.copper).collidesAir = false;
-Blocks.salvo.ammoTypes.get(Items.copper).ammoMultiplier = 5;
+Blocks.salvo.ammoTypes.get(Items.copper).ammoMultiplier = 2;
 Blocks.salvo.ammoTypes.get(Items.copper).damage = 20;
 Blocks.salvo.ammoTypes.get(Items.graphite).collidesAir = false;
-Blocks.salvo.ammoTypes.get(Items.graphite).ammoMultiplier = 6;
+Blocks.salvo.ammoTypes.get(Items.graphite).ammoMultiplier = 3;
 Blocks.salvo.ammoTypes.get(Items.graphite).damage = 50;
 Blocks.salvo.ammoTypes.get(Items.graphite).reloadMultiplier = 0.7;
 Blocks.salvo.ammoTypes.get(Items.thorium).collidesAir = false;
-Blocks.salvo.ammoTypes.get(Items.thorium).ammoMultiplier = 5;
+Blocks.salvo.ammoTypes.get(Items.thorium).ammoMultiplier = 2;
 Blocks.salvo.ammoTypes.get(Items.thorium).damage = 40;
 Blocks.salvo.ammoTypes.get(Items.silicon).collidesAir = false;
-Blocks.salvo.ammoTypes.get(Items.silicon).ammoMultiplier = 6;
-Blocks.salvo.ammoTypes.get(Items.silicon).damage = 30;
+Blocks.salvo.ammoTypes.get(Items.silicon).ammoMultiplier = 3;
+Blocks.salvo.ammoTypes.get(Items.silicon).damage = 28;
 Blocks.salvo.ammoTypes.get(Items.silicon).reloadMultiplier = 1.3;
 Blocks.salvo.ammoTypes.get(Items.pyratite).collidesAir = false;
-Blocks.salvo.ammoTypes.get(Items.pyratite).ammoMultiplier = 10;
+Blocks.salvo.ammoTypes.get(Items.pyratite).ammoMultiplier = 6;
 Blocks.salvo.ammoTypes.get(Items.pyratite).damage = 35;
 Blocks.salvo.ammoTypes.get(Items.pyratite).splashDamage = 20;
 Blocks.salvo.scaledHealth = 500;
-Blocks.salvo.inaccuracy = 1;
+Blocks.salvo.inaccuracy = 1.5;
 Blocks.salvo.range = 240;
 Blocks.salvo.limitRange();
 Blocks.salvo.reload = 240;
 Blocks.salvo.shoot.shots = 25;
-Blocks.salvo.ammoPerShot = 5;
+Blocks.salvo.ammoPerShot = 6;
 Blocks.salvo.shoot.shotDelay = 1.2;
 Blocks.salvo.consumeAmmoOnce = true;
 Blocks.salvo.requirements = ItemStack.with(Items.copper, 450, Items.graphite, 360, Items.titanium, 225);
@@ -337,6 +339,9 @@ Blocks.parallax.range = 280;
 Blocks.parallax.status = StatusEffects.unmoving;
 Blocks.parallax.requirements = ItemStack.with(Items.silicon, 360, Items.titanium, 270, Items.graphite, 90);
 
+Blocks.tsunami.inaccuracy = 30;
+Blocks.tsunami.shoot.shots = 3;
+Blocks.tsunami.reload = 1;
 	
 Blocks.fuse.targetAir = false;
 Blocks.fuse.ammoTypes.get(Items.thorium).collidesAir = false;
@@ -347,10 +352,13 @@ Blocks.cyclone.targetGround = false;
 Blocks.cyclone.ammoTypes.get(Items.metaglass).collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullet.damage = 110;
 Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullets = 4;
+Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullet.lifetime = 30;
 Blocks.cyclone.ammoTypes.get(Items.metaglass).fragBullet.collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.plastanium).collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullet.damage = 110;
 Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullets = 8;
+Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullet.width = 5;
+Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullet.lifetime = 30;
 Blocks.cyclone.ammoTypes.get(Items.plastanium).fragBullet.collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).collidesGround = false;
 Blocks.cyclone.ammoTypes.get(Items.surgeAlloy).lightningDamage = 55;
@@ -360,13 +368,27 @@ Blocks.cyclone.ammoTypes.get(Items.blastCompound).splashDamage = 110;
 Blocks.cyclone.limitRange();
 Blocks.cyclone.requirements = ItemStack.with(Items.copper, 1000, Items.titanium, 500,  Items.plastanium, 240);																											  
 
-Blocks.ripple.shoot.shots = 50;
-Blocks.ripple.shoot.shotDelay = 0.1;
-Blocks.ripple.velocityRnd = 0.3;
+Blocks.ripple.ammoTypes.get(Items.graphite).splashDamageRadius = 32;
+Blocks.ripple.ammoTypes.get(Items.graphite).ammoMultiplier = 2;
+Blocks.ripple.ammoTypes.get(Items.silicon).splashDamageRadius = 32;
+Blocks.ripple.ammoTypes.get(Items.silicon).ammoMultiplier = 2;
+Blocks.ripple.ammoTypes.get(Items.plastanium).splashDamageRadius = 24;
+Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullet.width = 5;
+Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullet.lifetime = 30;
+Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullet.damage = 100;
+Blocks.ripple.ammoTypes.get(Items.plastanium).fragBullets = 2;
+Blocks.ripple.ammoTypes.get(Items.plastanium).ammoMultiplier = 3;
+Blocks.ripple.ammoTypes.get(Items.blastCompound).splashDamageRadius = 48;
+Blocks.ripple.ammoTypes.get(Items.blastCompound).ammoMultiplier = 6;
+Blocks.ripple.ammoTypes.get(Items.pyratite).splashDamageRadius = 32;
+Blocks.ripple.ammoTypes.get(Items.pyratite).ammoMultiplier = 3;
+Blocks.ripple.shoot.shots = 20;
 Blocks.ripple.reload = 240;
 Blocks.ripple.ammoPerShot = 6;
 Blocks.ripple.scaledHealth = 300;
+Blocks.ripple.minRange = 100;
 Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 810, Items.titanium, 720);	
+Blocks.ripple.velocityRnd = -0.3;
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
