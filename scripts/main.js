@@ -245,6 +245,24 @@ UnitTypes.sei.weapons.get(0).bullet.maxRange = 30;
 UnitTypes.omura.health = 15000;
 UnitTypes.omura.weapons.get(0).bullet.damage = 2500;
 
+let retusaBolt = new LaserBoltBulletType(5.2, 10);
+retusaBolt.lifetime = 35;
+retusaBolt.healPercent = 5.5;
+retusaBolt.collidesTeam = true;
+retusaBolt.backColor = Pal.heal;
+retusaBolt.frontColor = Color.white;
+
+let retusaMount = new Weapon("heal-weapon-mount");
+retusaMount.shootSound = Sounds.lasershoot;
+retusaMount.reload = 22;
+retusaMount.x = 4.5;
+retusaMount.y = -3.5;
+retusaMount.rotateSpeed = 5;
+retusaMount.mirror = true;
+retusaMount.rotate = true;
+retusaMount.bullet = retusaBolt;
+UnitTypes.retusa.weapons.add(retusaMount);
+
 UnitTypes.aegires.health = 1200;
 
 UnitTypes.navanax.health = 60000;
