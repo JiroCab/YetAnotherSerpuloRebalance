@@ -210,7 +210,8 @@ UnitTypes.oct.abilities.get(0).regen = (500/60);
 //when I loaded up the mod the shield regen was 30,000 lol
 
 UnitTypes.flare.weapons.get(0).bullet.homingPower = 0.04;
-UnitTypes.flare.weapons.get(0).shootCone = 5;
+UnitTypes.flare.weapons.get(0).shootCone = 30;
+UnitTypes.flare.rotateSpeed = 100;
 
 UnitTypes.horizon.health = 100;
 UnitTypes.horizon.speed = (20 / 7.5);
