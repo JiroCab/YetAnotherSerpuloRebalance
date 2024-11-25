@@ -14,9 +14,10 @@ lightningBul.collidesGround = false;
 lightningBul.collidesAir = true;
 
 UnitTypes.mace.speed = 0.7; 
+UnitTypes.mace.health = 700; 
 UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.mace.weapons.get(0).bullet.pierceBuilding = false;
+UnitTypes.mace.weapons.get(0).bullet.damage = 20;
 
 let fortressAAWeapon = new Weapon("missiles-mount");
 fortressAAWeapon.bullet = new BasicBulletType(5, 150); // syntax speed: (speed, dmg)
@@ -124,17 +125,17 @@ atraxAAWeapon.rotate = true;
 atraxAAWeapon.x = 0;
 atraxAAWeapon.y = 2;
 atraxAAWeapon.shootY = 2;
-atraxAAWeapon.reload = 180;
+atraxAAWeapon.reload = 300;
 atraxAAWeapon.shootSound = Sounds.shootSnap;
 atraxAAWeapon.bullet.lifetime = 40;
-atraxAAWeapon.bullet.splashDamage = 40;
+atraxAAWeapon.bullet.splashDamage = 55;
 atraxAAWeapon.bullet.splashDamageRadius = 25;
 
 UnitTypes.atrax.hitSize = 11;
 UnitTypes.atrax.range = 110;
 UnitTypes.atrax.maxRange = 110; //manual ovrride so it doesnt attack at full range of the mini scatter (18)
 UnitTypes.atrax.weapons.add(atraxAAWeapon);
-
+UnitTypes.atrax.health = 400;
 
 //Unrelated, Rushie cannot spell spriroct
 UnitTypes.spiroct.speed = (7 / 7.5);
