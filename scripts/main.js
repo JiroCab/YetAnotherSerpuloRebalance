@@ -324,8 +324,6 @@ Blocks.swarmer.range = 400;
 Blocks.swarmer.limitRange();
 Blocks.swarmer.requirements = ItemStack.with(Items.graphite, 210, Items.titanium, 210, Items.silicon, 180, Items.plastanium, 270);
 
-Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).damage = 500;
-
 Blocks.salvo.targetAir = false;
 Blocks.salvo.ammoTypes.get(Items.copper).collidesAir = false;
 Blocks.salvo.ammoTypes.get(Items.copper).ammoMultiplier = 2;
@@ -365,8 +363,18 @@ Blocks.tsunami.shoot.shots = 3;
 Blocks.tsunami.reload = 1;
 	
 Blocks.fuse.targetAir = false;
+Blocks.fuse.reload = 300;
 Blocks.fuse.ammoTypes.get(Items.thorium).collidesAir = false;
+Blocks.fuse.ammoTypes.get(Items.thorium).status = StatusEffects.unmoving;
+Blocks.fuse.ammoTypes.get(Items.thorium).statusDuration = 60;
+Blocks.fuse.ammoTypes.get(Items.thorium).damage = 300;
+Blocks.fuse.ammoTypes.get(Items.thorium).ammoMultiplier = 1;
 Blocks.fuse.ammoTypes.get(Items.titanium).collidesAir = false;
+Blocks.fuse.ammoTypes.get(Items.titanium).status = StatusEffects.unmoving;
+Blocks.fuse.ammoTypes.get(Items.titanium).statusDuration = 60;
+Blocks.fuse.ammoTypes.get(Items.titanium).reloadMultiplier = 5;
+Blocks.fuse.ammoTypes.get(Items.titanium).damage = 36;
+Blocks.fuse.ammoTypes.get(Items.titanium).ammoMultiplier = 5;
 
 Blocks.cyclone.range = 240;
 Blocks.cyclone.targetGround = false;
@@ -410,6 +418,8 @@ Blocks.ripple.scaledHealth = 300;
 Blocks.ripple.minRange = 100;
 Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 810, Items.titanium, 720);	
 Blocks.ripple.velocityRnd = -0.3;
+
+Blocks.Blocks.foreshadow.reload = 540;
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
