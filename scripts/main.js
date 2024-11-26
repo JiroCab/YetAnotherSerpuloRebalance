@@ -363,18 +363,13 @@ Blocks.tsunami.shoot.shots = 3;
 Blocks.tsunami.reload = 1;
 	
 Blocks.fuse.targetAir = false;
-Blocks.fuse.reload = 300;
 Blocks.fuse.ammoTypes.get(Items.thorium).collidesAir = false;
 Blocks.fuse.ammoTypes.get(Items.thorium).status = StatusEffects.unmoving;
-Blocks.fuse.ammoTypes.get(Items.thorium).statusDuration = 60;
-Blocks.fuse.ammoTypes.get(Items.thorium).damage = 300;
-Blocks.fuse.ammoTypes.get(Items.thorium).ammoMultiplier = 1;
+Blocks.fuse.ammoTypes.get(Items.thorium).statusDuration = 30;
 Blocks.fuse.ammoTypes.get(Items.titanium).collidesAir = false;
 Blocks.fuse.ammoTypes.get(Items.titanium).status = StatusEffects.unmoving;
-Blocks.fuse.ammoTypes.get(Items.titanium).statusDuration = 60;
-Blocks.fuse.ammoTypes.get(Items.titanium).reloadMultiplier = 5;
-Blocks.fuse.ammoTypes.get(Items.titanium).damage = 36;
-Blocks.fuse.ammoTypes.get(Items.titanium).ammoMultiplier = 5;
+Blocks.fuse.ammoTypes.get(Items.titanium).statusDuration = 30;
+
 
 Blocks.cyclone.range = 240;
 Blocks.cyclone.targetGround = false;
