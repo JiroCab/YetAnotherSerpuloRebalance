@@ -84,7 +84,7 @@ let novaHeal = new RepairBeamWeapon("repair-beam-weapon-center");
 novaHeal.top = false;
 novaHeal.mirror = true;
 novaHeal.x = 4.5;
-novaHeal.y = -1
+novaHeal.y = -1;
 novaHeal.rotate = false;
 novaHeal.beamWidth = 0.3;
 novaHeal.layerOffset = -1;
@@ -94,7 +94,7 @@ novaHeal.bullet.maxRange = 80;
 novaHeal.shootCone = 30;
 
 UnitTypes.nova.weapons.add(novaHeal);
-unitTypes.nova.abilities.remove(0);
+UnitTypes.nova.abilities.remove(0);
 
 UnitTypes.pulsar.mineTier = -1;
 UnitTypes.pulsar.mineSpeed = 1;
