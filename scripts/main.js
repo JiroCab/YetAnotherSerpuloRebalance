@@ -80,14 +80,18 @@ UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 8) / 13;
 UnitTypes.reign.weapons.get(0).shootCone = 6.9; //incrased the shoot cone to reduce ai dumbness
 UnitTypes.reign.targetAir = false;
 
-let novaHeal = new RepairBeamWeapon("repair-beam-weapon-center");
+//Rushie is a dumb, forgot to say fixed point healing points are not supported
+let novaHeal = new RepairBeamWeapon("");
 novaHeal.top = false;
 novaHeal.mirror = true;
-novaHeal.x = 4.5;
-novaHeal.y = -1;
+novaHeal.rotate = true;
+novaHeal.pulseRadius = 3;
+novaHeal.pulseStroke = 1;
+novaHeal.x = 3;
+novaHeal.y = -4;
 novaHeal.rotate = false;
 novaHeal.beamWidth = 0.3;
-novaHeal.layerOffset = -1;
+novaHeal.layerOffset = -0.01;
 novaHeal.repairSpeed = 0.2;
 novaHeal.bullet = new BulletType();
 novaHeal.bullet.maxRange = 80;
@@ -429,7 +433,7 @@ Blocks.ripple.minRange = 100;
 Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 810, Items.titanium, 720);	
 Blocks.ripple.velocityRnd = -0.3;
 
-Blocks.Blocks.foreshadow.reload = 540;
+Blocks.foreshadow.reload = 540;
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
