@@ -80,6 +80,19 @@ UnitTypes.reign.weapons.get(0).bullet.lifetime = (32 * 8) / 13;
 UnitTypes.reign.weapons.get(0).shootCone = 6.9; //incrased the shoot cone to reduce ai dumbness
 UnitTypes.reign.targetAir = false;
 
+let novaHeal = new RepairBeamWeapon("repair-beam-weapon-center");
+novaHeal.top = false;
+novaHeal.mirror = true;
+novaHeal.x = 4.5;
+novaHeal.rotate = false;
+novaHeal.beamWidth = 0.6;
+novaHeal.layerOffset = -1;
+novaHeal.repairSpeed = 0.25;
+novaHeal.bullet = new BulletType();
+novaHeal.bullet.maxRange = 120;
+
+UnitTypes.nova.weapons.add(novaHeal);
+
 UnitTypes.pulsar.mineTier = -1;
 UnitTypes.pulsar.mineSpeed = 1;
 
