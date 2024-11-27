@@ -281,15 +281,12 @@ Blocks.surgeWallLarge.armor = 20;
 
 Blocks.duo.targetAir = false;
 Blocks.duo.ammoTypes.get(Items.copper).collidesAir = false;
-Blocks.duo.ammoTypes.get(Items.copper).ammoMultiplier = 4;
 Blocks.duo.ammoTypes.get(Items.graphite).collidesAir = false;
-Blocks.duo.ammoTypes.get(Items.graphite).ammoMultiplier = 8;
 Blocks.duo.ammoTypes.get(Items.silicon).collidesAir = false;
-Blocks.duo.ammoTypes.get(Items.silicon).ammoMultiplier = 10;
 Blocks.duo.health = 269;
 Blocks.duo.shoot.shots = 2;
 Blocks.duo.shoot.shotDelay = 3;
-Blocks.duo.reload = 30;
+Blocks.duo.reload = 60;
 Blocks.duo.range = 190;
 Blocks.duo.limitRange();
 
