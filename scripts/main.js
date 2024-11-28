@@ -222,10 +222,12 @@ UnitTypes.quad.weapons.get(0).bullet.homingPower = 100
 UnitTypes.quad.weapons.get(0).bullet.homingRange = 100
 UnitTypes.quad.weapons.get(0).bullet.speed = 0.5
 UnitTypes.quad.weapons.get(0).reload = 300;
+UnitTypes.quad.trailLength = 7;
 
 UnitTypes.oct.health = 12000;
 UnitTypes.oct.buildSpeed = 20;
 UnitTypes.oct.itemCapacity = 1000;
+UnitTypes.oct.trailLength = 7;
 UnitTypes.oct.abilities.get(0).max = 40000;
 UnitTypes.oct.abilities.get(0).regen = (500/60);
 //when I loaded up the mod the shield regen was 30,000 lol
