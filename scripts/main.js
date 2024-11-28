@@ -45,7 +45,7 @@ UnitTypes.fortress.health = 500;
 UnitTypes.fortress.range = (32*8);
 UnitTypes.fortress.weapons.get(0).bullet.splashDamageRadius = 24
 
-UnitTypes.scepter.health = 4000;
+UnitTypes.scepter.health = 2000;
 UnitTypes.scepter.speed = (3.22 / 7.5);
 UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.scepter.weapons.get(0).shoot.shots = 2
@@ -112,8 +112,6 @@ UnitTypes.quasar.mineSpeed = 1;
 //laser bullets are pain to wrap your mind around
 UnitTypes.vela.targetAir = false;
 UnitTypes.vela.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.vela.weapons.get(0).bullet.damage = (200 / 12);
-UnitTypes.vela.weapons.get(0).bullet.buildingDamageMultiplier = 1.25;
 UnitTypes.vela.health = 3000;
 
 UnitTypes.corvus.targetAir = false;
@@ -158,17 +156,25 @@ UnitTypes.atrax.weapons.add(atraxAAWeapon);
 UnitTypes.atrax.health = 400;
 
 //Unrelated, Rushie cannot spell spriroct
-UnitTypes.spiroct.speed = (7 / 7.5);
+UnitTypes.spiroct.speed = (5 / 7.5);
 UnitTypes.spiroct.targetAir = false;
 UnitTypes.spiroct.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.spiroct.weapons.get(0).bullet.length = 40;
 UnitTypes.spiroct.weapons.get(1).bullet.collidesAir = false;
+UnitTypes.spiroct.health = 2500;
+UnitTypes.spiroct.armor = 0;
 
+UnitTypes.arkyid.speed = (5 / 7.5);
 UnitTypes.arkyid.targetAir = false;
 UnitTypes.arkyid.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.arkyid.weapons.get(0).bullet.length = 40;
 UnitTypes.arkyid.weapons.get(1).bullet.collidesAir = false;
+UnitTypes.arkyid.weapons.get(1).bullet.length = 40;
 UnitTypes.arkyid.weapons.get(2).bullet.collidesAir = false;
+UnitTypes.arkyid.weapons.get(2).bullet.length = 40;
 UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28
-UnitTypes.arkyid.health = 3000;
+UnitTypes.arkyid.health = 6000;
+UnitTypes.arkyid.armor = 0;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
