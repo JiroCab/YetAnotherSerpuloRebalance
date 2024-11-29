@@ -389,14 +389,13 @@ Blocks.tsunami.reload = 1;
 	
 Blocks.fuse.targetAir = false;
 Blocks.fuse.reload = 70;
+Blocks.fuse.range = 112;
 Blocks.fuse.ammoTypes.get(Items.thorium).collidesAir = false;
 Blocks.fuse.ammoTypes.get(Items.thorium).status = StatusEffects.unmoving;
 Blocks.fuse.ammoTypes.get(Items.thorium).statusDuration = 60;
 Blocks.fuse.ammoTypes.get(Items.titanium).collidesAir = false;
 Blocks.fuse.ammoTypes.get(Items.titanium).status = StatusEffects.unmoving;
 Blocks.fuse.ammoTypes.get(Items.titanium).statusDuration = 60;
-
-
 
 Blocks.cyclone.range = 240;
 Blocks.cyclone.targetGround = false;
