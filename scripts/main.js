@@ -156,24 +156,31 @@ UnitTypes.atrax.weapons.add(atraxAAWeapon);
 UnitTypes.atrax.health = 400;
 
 //Unrelated, Rushie cannot spell spriroct
-UnitTypes.spiroct.speed = (5 / 7.5);
 UnitTypes.spiroct.targetAir = false;
 UnitTypes.spiroct.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.spiroct.weapons.get(0).bullet.length = 40;
+UnitTypes.spiroct.weapons.get(0).bullet.damage = 20;
+UnitTypes.spiroct.weapons.get(0).bullet.sapStrength = 0.1;
 UnitTypes.spiroct.weapons.get(1).bullet.collidesAir = false;
-UnitTypes.spiroct.health = 2500;
+UnitTypes.spiroct.weapons.get(1).bullet.sapStrength = 0.1;
+UnitTypes.spiroct.health = 1500;
 UnitTypes.spiroct.armor = 0;
 
-UnitTypes.arkyid.speed = (5 / 7.5);
 UnitTypes.arkyid.targetAir = false;
 UnitTypes.arkyid.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(0).bullet.length = 40;
+UnitTypes.arkyid.weapons.get(0).bullet.sapStrength = 0.1;
+UnitTypes.arkyid.weapons.get(0).bullet.damage = 20;
 UnitTypes.arkyid.weapons.get(1).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(1).bullet.length = 40;
+UnitTypes.arkyid.weapons.get(1).bullet.sapStrength = 0.1;
+UnitTypes.arkyid.weapons.get(1).bullet.damage = 20;
 UnitTypes.arkyid.weapons.get(2).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(2).bullet.length = 40;
-UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28
-UnitTypes.arkyid.health = 6000;
+UnitTypes.arkyid.weapons.get(2).bullet.sapStrength = 0.1;
+UnitTypes.arkyid.weapons.get(2).bullet.damage = 20;
+UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28;
+UnitTypes.arkyid.health = 4000;
 UnitTypes.arkyid.armor = 0;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
@@ -439,6 +446,10 @@ Blocks.ripple.scaledHealth = 300;
 Blocks.ripple.minRange = 100;
 Blocks.ripple.requirements = ItemStack.with(Items.copper, 900, Items.graphite, 810, Items.titanium, 720);	
 Blocks.ripple.velocityRnd = -0.3;
+
+Blocks.spectre.ammoTypes.get(Items.graphite).knockback = 10;
+Blocks.spectre.ammoTypes.get(Items.thorium).knockback = 10;
+Blocks.spectre.ammoTypes.get(Items.pyratite).knockback = 10;
 
 Blocks.foreshadow.reload = 540;
 
