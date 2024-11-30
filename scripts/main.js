@@ -183,6 +183,7 @@ UnitTypes.arkyid.weapons.get(2).shootStatus = StatusEffects.slow;
 UnitTypes.arkyid.weapons.get(2).shootStatusDuration = 20;
 UnitTypes.arkyid.weapons.get(2).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28;
+UnitTypes.arkyid.weapons.get(3).reload = 90;
 UnitTypes.arkyid.health = 6000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
