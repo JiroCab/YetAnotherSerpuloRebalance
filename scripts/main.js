@@ -261,6 +261,17 @@ UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
 UnitTypes.horizon.weapons.get(0).bullet.damage = 3;
 UnitTypes.horizon.weapons.get(0).bullet.splashDamageRadius = 32;	
 
+let zenithEyeCandy = new Effect(25, e => {
+	Draw.color(e.color, 0.5);
+	Fill.circle(e.x, e.y, e.rotation * e.fout());
+});
+zenithEyeCandy.layer = Layer.flyingUnitLow - 0.001; //dont render over the zeniths since its too similar to the overdirve effects :p
+	
+let zenithSmoke = new MoveEffectAbility(0, -1, Pal.sapBulletBack, zenithEyeCandy, 6);
+zenithSmoke.teamColor = true;
+zenithSmoke.minVelocity = 1.5; 
+
+UnitTypes.zenith.abilities.add(zenithSmoke);
 UnitTypes.zenith.health = 400;
 UnitTypes.zenith.speed = (26 / 7.5);
 UnitTypes.zenith.range = 280;
@@ -303,6 +314,17 @@ UnitTypes.retusa.weapons.add(retusaMount);
 
 UnitTypes.aegires.health = 1200;
 
+//hmm navaSnack.....
+let navaSnackSheild = new ShieldArcAbility();
+navaSnackSheild.radius = 42;
+navaSnackSheild.angle = 120;
+navaSnackSheild.regen = 0.6;
+navaSnackSheild.cooldown = 60 * 8;
+navaSnackSheild.max = 2000;
+navaSnackSheild.width = 10;
+navaSnackSheild.whenShooting = false;
+
+UnitTypes.navanax.abilities.add(navaSnackSheild)
 UnitTypes.navanax.health = 60000;
 UnitTypes.navanax.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.navanax.weapons.get(1).bullet.collidesAir = false;
