@@ -183,7 +183,7 @@ UnitTypes.arkyid.weapons.get(2).shootStatus = StatusEffects.slow;
 UnitTypes.arkyid.weapons.get(2).shootStatusDuration = 20;
 UnitTypes.arkyid.weapons.get(2).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28;
-UnitTypes.arkyid.weapons.get(3).reload = 90;
+UnitTypes.arkyid.weapons.get(3).reload = 210;
 UnitTypes.arkyid.health = 6000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
@@ -274,17 +274,18 @@ zenithSmoke.minVelocity = 1.5;
 UnitTypes.zenith.abilities.add(zenithSmoke);
 UnitTypes.zenith.health = 400;
 UnitTypes.zenith.speed = (26 / 7.5);
-UnitTypes.zenith.range = 280;
+UnitTypes.zenith.range = 240;
 UnitTypes.zenith.weapons.get(0).bullet.collidesGround = false;
 UnitTypes.zenith.weapons.get(0).bullet.absorbable = false;
 UnitTypes.zenith.weapons.get(0).bullet.keepVelocity = true;
 UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 2);
 UnitTypes.zenith.weapons.get(0).bullet.damage = 45;
-UnitTypes.zenith.weapons.get(0).bullet.lifetime = (18 / 6) * 2 * 8;
+UnitTypes.zenith.weapons.get(0).bullet.lifetime = 38;
 
 UnitTypes.antumbra.health = 5000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
+UnitTypes.antumbra.weapons.add(fortressAAWeapon);
 
 UnitTypes.eclipse.health = 66000;
 
