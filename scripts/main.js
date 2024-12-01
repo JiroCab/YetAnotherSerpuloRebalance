@@ -182,8 +182,8 @@ UnitTypes.arkyid.weapons.get(2).bullet.collidesAir = false;
 UnitTypes.arkyid.weapons.get(2).shootStatus = StatusEffects.slow;
 UnitTypes.arkyid.weapons.get(2).shootStatusDuration = 20;
 UnitTypes.arkyid.weapons.get(2).bullet.buildingDamageMultiplier = 0.1;
-UnitTypes.arkyid.weapons.get(3).bullet.splashDamageRadius = 28;
-UnitTypes.arkyid.weapons.get(3).reload = 210;
+UnitTypes.arkyid.weapons.get(3).bullet.splashDamage = 5;
+UnitTypes.arkyid.weapons.get(3).bullet.lifetime = 100;
 UnitTypes.arkyid.health = 6000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
@@ -286,6 +286,7 @@ UnitTypes.antumbra.health = 5000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.antumbra.weapons.add(fortressAAWeapon);
+UnitTypes.antumbra.weapons.get(3).y = -12;
 
 UnitTypes.eclipse.health = 66000;
 
