@@ -39,6 +39,7 @@ fortressAAWeapon.bullet.trailLength = 4;
 fortressAAWeapon.bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 fortressAAWeapon.bullet.lifetime = (32 * 8) / 5;
 fortressAAWeapon.bullet.collidesGround = false;
+fortressAAWeapon.bullet.absorbable = false;
 
 UnitTypes.fortress.weapons.add(fortressAAWeapon);
 UnitTypes.fortress.health = 500;
@@ -48,7 +49,6 @@ UnitTypes.fortress.weapons.get(0).bullet.splashDamageRadius = 24
 UnitTypes.scepter.health = 2000;
 UnitTypes.scepter.speed = (3.22 / 7.5);
 UnitTypes.scepter.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.scepter.weapons.get(0).shoot.shots = 2
 UnitTypes.scepter.weapons.get(0).bullet.damage = 100;
 UnitTypes.scepter.weapons.get(0).bullet.lightningDamage = 5;
 UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 8) / 8;
@@ -148,6 +148,7 @@ atraxAAWeapon.shootSound = Sounds.shootSnap;
 atraxAAWeapon.bullet.lifetime = 40;
 atraxAAWeapon.bullet.splashDamage = 55;
 atraxAAWeapon.bullet.splashDamageRadius = 25;
+atraxAAWeapon.bullet.absorbable = false;
 
 UnitTypes.atrax.hitSize = 11;
 UnitTypes.atrax.range = 110;
@@ -189,9 +190,11 @@ UnitTypes.arkyid.weapons.get(2).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.arkyid.weapons.get(2).bullet.sapStrength = 0;
 UnitTypes.arkyid.weapons.get(3).bullet.splashDamage = 5;
 UnitTypes.arkyid.weapons.get(3).bullet.lifetime = 100;
+UnitTypes.arkyid.maxRange = 55;
 UnitTypes.arkyid.health = 8000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
+UnitTypes.toxopid.targetAir = false;
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
 UnitTypes.toxopid.weapons.get(0).bullet.collidesAir = false;
 
@@ -291,7 +294,6 @@ UnitTypes.antumbra.health = 5000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.antumbra.weapons.add(fortressAAWeapon);
-UnitTypes.antumbra.weapons.get(3).y = -12;
 
 UnitTypes.eclipse.health = 66000;
 
