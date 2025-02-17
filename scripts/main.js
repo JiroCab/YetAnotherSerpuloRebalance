@@ -327,7 +327,7 @@ UnitTypes.aegires.health = 1200;
 let navaSnackSheild = new ShieldArcAbility();
 navaSnackSheild.radius = 42;
 navaSnackSheild.angle = 120;
-navaSnackSheild.regen = 0.6;
+navaSnackSheild.regen = 1.2;
 navaSnackSheild.cooldown = 60 * 8;
 navaSnackSheild.max = 2000;
 navaSnackSheild.width = 10;
@@ -486,6 +486,8 @@ Blocks.spectre.ammoTypes.get(Items.thorium).knockback = 10;
 Blocks.spectre.ammoTypes.get(Items.pyratite).knockback = 10;
 
 Blocks.foreshadow.reload = 540;
+Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).status = StatusEffects.slow
+Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).statusDuration = 120
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
