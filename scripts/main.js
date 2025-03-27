@@ -304,9 +304,9 @@ UnitTypes.sei.weapons.get(0).bullet.maxRange = 30;
 UnitTypes.omura.health = 15000;
 UnitTypes.omura.weapons.get(0).bullet.damage = 2500;
 UnitTypes.omura.abilities.get(0).unit = UnitTypes.horizon;
-UnitTypes.omura.abilities.get(0).spawnTime = 240
+UnitTypes.omura.abilities.get(0).spawnTime = 2400;
 UnitTypes.omura.abilities.get(1).unit = UnitTypes.horizon;
-UnitTypes.omura.abilities.get(1).spawnTime = 240
+UnitTypes.omura.abilities.get(1).spawnTime = 2400;
 
 let retusaBolt = new LaserBoltBulletType(5.2, 10);
 retusaBolt.lifetime = 35;
