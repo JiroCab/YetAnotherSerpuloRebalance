@@ -1,8 +1,264 @@
 name: "yasr"
 displayName: "Yet another Serpulo Rebalance (yasr)"
 author: "Rushie Washie, GooglyGoo"
-description: "Serpulo Tweaks"
+description: "Any block/unit/statistic not mentioned here has been left unchanged
+
+
+
+T5 units 
+   doubled in cost and build time
+
+T4 units 
+   0.67x cost and build time
+
+T4 constructor cost reduced
+   Lead - 1200
+   Titanium - 1000
+   Thorium - 650
+   Silicon - 700
+   Plastanium - 250
+
+
+Phase Wall
+   60% deflection chance
+
+Surge Wall
+   20 armor
+
+
+
+Duo 
+   No longer hits air
+   Range increased to 23.75
+   Shoots 2 shots per second
+
+Salvo
+   No longer hits air
+   Shoots a proper salvo of 25 bullets
+   Very long reload time
+   Massively increased build cost
+   Range increased to 30
+
+Fuse
+   No longer hits air
+   Range increased to 14 (same projectile hitbox)
+   Applies unmoving for 1 second
+   Doubled reload time
+   
+Ripple
+   Shoots 20 shells at a time
+   Very long reload
+   Shells do more damage
+   Massively increased build cost
+
+Spectre
+   Knowckback increased to 10 for all ammo types
+
+Parallax
+   Applies Unmoving 
+   Range increased to 35
+   Build cost increased 3x
+
+Tsunami
+   30° spread
+   Shoots more
+
+Meltdown 
+   no longer hit air
+
+Foreshadow 
+   2.7x longer reload
+
+Swarmer
+   Hits air only
+   Build cost increased 6x
+   Range greatly increased to 50
+   Damage rework to be single-target focused
+      Surge - 70 + 10x2 lightning 
+      Blast - 90 + 10 area (3.5)
+      Pyratite - 90
+
+Cyclone 
+   Hits air only
+   Build cost increased 4x
+   Range increase to 30
+   Damage greatly increased
+      Metaglass - 6 + 45area(3.1) + 4x110 frag
+      Plastanium - 8 + 37area(5) + 8x110 frag
+      Surge - 13 + 75area(4.7) + 2x55 lightning
+      Blast - 8 + 110 area (7.5)
+
+
+
+Flare
+   Homing bullets
+   Rotates faster
+
+Horizon
+   Reworked - hit & run carpet bomber
+   Health 100
+   Speed 20
+   Drops 8 bombs rapidly with a 5 second reload time
+   Bomb AOE increased to 4
+
+Zenith
+   Reworked - air superiority fighter
+   Health 400
+   Speed 26
+   Missiles can only damage air units and ignore shields
+   Damage 45 +15 area (3.1)
+   Range ~30
+
+Antumbra
+   Health 5000
+   Now has 3x3 payload capacity
+   Has a slow firing high damage AA missile
+      Damage 150
+      Reload 4s
+   
+
+Eclipse 
+   Health 66000
+
+
+Mono
+   Increased HP
+   Extremely slow self-healing
+
+Poly
+   Reworked - support / air figher
+   Missiles can only damage air units and ignore shields
+   Damage 40
+   Block healing is now a laser similar to the erekir core units
+
+Mega
+   Health 1200
+   Armor 0
+   Speed 16
+   Healing factor of bullets greatly reduced
+
+Quad
+   Reworked - hit & run strategic bomber
+   Health 1000
+   Damage 1000
+   Reload 5s
+   Speed 20
+   No longer has payload capacity
+
+Oct
+   Health 12000
+   Shield 40000
+   Shield regen 500
+   Item capacity 1000
+
+
+
+Mace
+   Speed 5.25
+   Cannot hit air
+   20 dmg
+   700 HP
+
+Fortress
+   Health 500
+   Range 32
+   Has a slow firing high damage AA missile
+      Damage 150
+      Reload 4s
+
+Scepter
+   Health 2000
+   Range 31
+   Big guns only hit ground
+      Damage 100
+      Lightning damage 5
+   Little guns only hit air
+      Damage 25
+      Homing
+
+Reign
+   Heath 75000
+   Range 31
+   Cannot hit air
+
+
+
+Nova
+   Heal ability replaced by healing lasers
+
+Pulsar
+   No mining
+   Health 640
+
+Quasar
+   Cannot hit air
+   Shield size increase
+   No mining
+   
+Vela
+   Cannot hit air
+   Health 3000
+   Damage 200/s
+
+Corvus
+   Cannot hit air
+   Health 10000
+   Range 61
+   Damage 2000
+
+
+
+Crawler
+   Damage 200
+   Cannot hit air
+
+Atrax
+   Has slow firing AA flak cannon
+      Damage 40area(3.1)
+      Reload 3s
+   400 HP
+
+Spiroct
+   Cannot hit air
+   Speed 5
+   Health 2000
+   Sap lasers no longer life steal
+   Sap lasers -90% building dmg
+   Is slowed when sap lasers fire
+
+Arkyid
+   Cannot hit air
+   Speed 5
+   Health 8000
+   Main cannon damage 5
+   Sap lasers no longer life steal
+   Sap lasers -90% building dmg
+   Is slowed when sap lasers fire
+
+Toxopid
+   Cannot hit air
+   Speed 5
+   Fuse-like cannon damage 500
+
+Sei
+   Health 3000
+
+Omura
+   Health 15000
+   Damage 2500
+   Now spawns Horizons instead of Flares
+
+Retusa
+   Got a small laser like the one on a Nova
+
+Aegires
+   Health 1200
+
+Navanax
+   Health 60000
+   Laser beams no longer hit air
+   Got a frontal shield like the Tecta"
 version: "1.0"
 minGameVersion: "143.1"
 hidden: false
-subtitle: "meow v1.0"
+subtitle: "Balanced for competetive PvP with a focus on unit micro"
