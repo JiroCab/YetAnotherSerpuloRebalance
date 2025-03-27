@@ -102,6 +102,7 @@ UnitTypes.nova.abilities.remove(0);
 
 UnitTypes.pulsar.mineTier = -1;
 UnitTypes.pulsar.mineSpeed = 1;
+UnitTypes.pulsar.health = 640;
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.quasar.targetAir = false;
@@ -302,6 +303,10 @@ UnitTypes.sei.weapons.get(0).bullet.maxRange = 30;
 
 UnitTypes.omura.health = 15000;
 UnitTypes.omura.weapons.get(0).bullet.damage = 2500;
+UnitTypes.omura.abilities.get(0).unit = UnitTypes.horizon;
+UnitTypes.omura.abilities.get(0).spawnTime = 240
+UnitTypes.omura.abilities.get(1).unit = UnitTypes.horizon;
+UnitTypes.omura.abilities.get(1).spawnTime = 240
 
 let retusaBolt = new LaserBoltBulletType(5.2, 10);
 retusaBolt.lifetime = 35;
@@ -486,8 +491,6 @@ Blocks.spectre.ammoTypes.get(Items.thorium).knockback = 10;
 Blocks.spectre.ammoTypes.get(Items.pyratite).knockback = 10;
 
 Blocks.foreshadow.reload = 540;
-Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).status = StatusEffects.slow
-Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).statusDuration = 120
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
