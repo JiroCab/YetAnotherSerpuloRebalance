@@ -34,14 +34,14 @@ Duo
 
 Salvo
    No longer hits air
-   Shoots a proper salvo of 25 bullets
+   Shoots a salvo of 25 bullets
    Very long reload time
    Massively increased build cost
    Range increased to 30
 
 Fuse
    No longer hits air
-   Range increased to 14 (same projectile hitbox)
+   Range increased to 14
    Applies unmoving for 1 second
    Doubled reload time
    
@@ -52,7 +52,7 @@ Ripple
    Massively increased build cost
 
 Spectre
-   Knowckback increased to 10 for all ammo types
+   Knowckback increased to 10
 
 Parallax
    Applies Unmoving 
@@ -70,23 +70,39 @@ Foreshadow
    2.7x longer reload
 
 Swarmer
-   Hits air only
+   <>Hits air only<>
    Build cost increased 6x
    Range greatly increased to 50
-   Damage rework to be single-target focused
-      Surge - 70 + 10x2 lightning 
-      Blast - 90 + 10 area (3.5)
-      Pyratite - 90
+   Damage rework:
+      Surge Alloy
+        70 +
+        10x2 lightning 
+      Blast Compund
+        90 +
+        10 area (3.5 aoe)
+      Pyratite
+        90
 
 Cyclone 
-   Hits air only
+   <>Hits air only<>
    Build cost increased 4x
    Range increase to 30
-   Damage greatly increased
-      Metaglass - 6 + 45area(3.1) + 4x110 frag
-      Plastanium - 8 + 37area(5) + 8x110 frag
-      Surge - 13 + 75area(4.7) + 2x55 lightning
-      Blast - 8 + 110 area (7.5)
+   Damage rework:
+      Metaglass
+         6
+         45 area (3.1 aoe)
+         4 x 110 frag bullets
+      Plastanium
+        8
+        37 area (5 aoe)
+        8 x 110 frag bullets
+      Surge Alloy
+        13
+        75 area (4.7 aoe)
+        2 x 55 lightning
+      Blast Compound
+        8
+        110 area (7.5 aoe)
 
 
 
@@ -95,26 +111,29 @@ Flare
    Rotates faster
 
 Horizon
-   Reworked - hit & run carpet bomber
+   Now a hit & run carpet bomber
    Health 100
    Speed 20
-   Drops 8 bombs rapidly with a 5 second reload time
+   Drops 8 bombs rapidly
+   5 second reload time
    Bomb AOE increased to 4
 
 Zenith
-   Reworked - air superiority fighter
+   Now an air superiority fighter
    Health 400
    Speed 26
-   Missiles can only damage air units and ignore shields
-   Damage 45 +15 area (3.1)
+   Missiles can only damage air units
+   Ignores shields
+   Damage 45 +15 area (3.1 aoe)
    Range ~30
 
 Antumbra
    Health 5000
    Now has 3x3 payload capacity
-   Has a slow firing high damage AA missile
+   Has an extra AA missile
       Damage 150
       Reload 4s
+      Extended range
    
 
 Eclipse 
@@ -126,19 +145,20 @@ Mono
    Extremely slow self-healing
 
 Poly
-   Reworked - support / air figher
-   Missiles can only damage air units and ignore shields
+   Now a multi-role AA fighter
+   Now heals blocks using a laser
+   Missiles can only damage air units 
+   Ignores shields
    Damage 40
-   Block healing is now a laser similar to the erekir core units
 
 Mega
    Health 1200
    Armor 0
    Speed 16
-   Healing factor of bullets greatly reduced
+   Healing factor of bullets reduced
 
 Quad
-   Reworked - hit & run strategic bomber
+   Now a hit & run strategic bomber
    Health 1000
    Damage 1000
    Reload 5s
@@ -162,7 +182,7 @@ Mace
 Fortress
    Health 500
    Range 32
-   Has a slow firing high damage AA missile
+   Has a new long range AA missile
       Damage 150
       Reload 4s
 
@@ -184,11 +204,11 @@ Reign
 
 
 Nova
-   Heal ability replaced by healing lasers
+   Now heals units using lasers
 
 Pulsar
-   No mining
    Health 640
+   No mining
 
 Quasar
    Cannot hit air
@@ -213,27 +233,29 @@ Crawler
    Cannot hit air
 
 Atrax
-   Has slow firing AA flak cannon
-      Damage 40area(3.1)
-      Reload 3s
    400 HP
+   Has slow firing AA flak cannon
+      Damage 40 area(3.1aoe)
+      Reload 3s
 
 Spiroct
    Cannot hit air
    Speed 5
    Health 2000
-   Sap lasers no longer life steal
-   Sap lasers -90% building dmg
-   Is slowed when sap lasers fire
+   Sap lasers:
+     no longer life steal
+     -90% building dmg
+     slow the Sproct when fired
 
 Arkyid
    Cannot hit air
    Speed 5
    Health 8000
    Main cannon damage 5
-   Sap lasers no longer life steal
-   Sap lasers -90% building dmg
-   Is slowed when sap lasers fire
+   Sap lasers:
+     no longer life steal
+     -90% building dmg
+     slow the Arkyid when fired
 
 Toxopid
    Cannot hit air
@@ -246,10 +268,10 @@ Sei
 Omura
    Health 15000
    Damage 2500
-   Now spawns Horizons instead of Flares
+   Now spawns Horizons
 
 Retusa
-   Got a small laser like the one on a Nova
+   Now has small laser
 
 Aegires
    Health 1200
@@ -261,4 +283,4 @@ Navanax
 version: "1.0"
 minGameVersion: "143.1"
 hidden: false
-subtitle: "Balanced for competetive PvP with a focus on unit micro"
+subtitle: "Balanced for PvP with a focus on unit micro"
