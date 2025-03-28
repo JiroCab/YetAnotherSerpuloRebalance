@@ -489,15 +489,38 @@ Blocks.ripple.velocityRnd = -0.3;
 Blocks.spectre.ammoTypes.get(Items.graphite).knockback = 10;
 Blocks.spectre.ammoTypes.get(Items.thorium).knockback = 10;
 Blocks.spectre.ammoTypes.get(Items.pyratite).knockback = 10;
+Blocks.spectre.scaledHealth = 200;
 
 Blocks.foreshadow.reload = 540;
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
 
+
+
+Blocks.coreFoundation.scaledHealth = 600;
+
+Blocks.coreNucleus.scaledHealth = 900;
+
+
+
+
+Blocks.airFactory.scaledHealth = 105;
+Blocks.airFactory.requirements = ItemStack.with(Items.copper, 60, Items.lead, 70, Items.silicon, 90);
+
+Blocks.groundFactory.scaledHealth = 115;
+
+Blocks.navalFactory.scaledHealth = 120;
+
+Blocks.additiveReconstructor.scaledHealth = 125;
+
+Blocks.multiplicativeReconstructor.scaledHealth = 125;
+
+Blocks.exponentialReconstructor.scaledHealth = 125;
 Blocks.exponentialReconstructor.constructTime = 60 * 60 * (1);
 Blocks.exponentialReconstructor.requirements = ItemStack.with(Items.lead, 1200, Items.titanium, 1000, Items.thorium, 650, Items.silicon, 700,  Items.plastanium, 250);
 
+Blocks.tetrativeReconstructor.scaledHealth = 200;
 Blocks.tetrativeReconstructor.constructTime = 60 * 60 * (4 * 2);
 
 function postLoadContent(){
