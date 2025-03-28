@@ -3,7 +3,11 @@ displayName: "Yet another Serpulo Rebalance (yasr)"
 author: "Rushie Washie, GooglyGoo"
 description: "Any block/unit/statistic not mentioned here has been left unchanged
 
+Foundation & Nucleus core
+   Health increased significantly
 
+All factories & constructors
+   Health increased significantly
 
 T5 units 
    doubled in cost and build time
@@ -11,12 +15,19 @@ T5 units
 T4 units 
    0.67x cost and build time
 
-T4 constructor cost reduced
+T4 reconstructor cost reduced
    Lead - 1200
    Titanium - 1000
    Thorium - 650
    Silicon - 700
    Plastanium - 250
+
+T1 air factory
+   cost adjusted
+      copper - 60
+      lead - 70
+      silicon - 90
+
 
 
 Phase Wall
