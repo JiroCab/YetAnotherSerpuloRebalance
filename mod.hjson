@@ -70,7 +70,7 @@ Foreshadow
    2.7x longer reload
 
 Swarmer
-   <>Hits air only<>
+   ***Hits air only***
    Build cost increased 6x
    Range greatly increased to 50
    Damage rework:
@@ -84,7 +84,7 @@ Swarmer
         90
 
 Cyclone 
-   <>Hits air only<>
+   ***Hits air only***
    Build cost increased 4x
    Range increase to 30
    Damage rework:
@@ -134,10 +134,10 @@ Antumbra
       Damage 150
       Reload 4s
       Extended range
-   
 
 Eclipse 
    Health 66000
+
 
 
 Mono
@@ -262,6 +262,8 @@ Toxopid
    Speed 5
    Fuse-like cannon damage 500
 
+
+
 Sei
    Health 3000
 
@@ -269,6 +271,8 @@ Omura
    Health 15000
    Damage 2500
    Now spawns Horizons
+
+
 
 Retusa
    Now has small laser
@@ -283,4 +287,4 @@ Navanax
 version: "1.0"
 minGameVersion: "143.1"
 hidden: false
-subtitle: "Balanced for PvP with a focus on unit micro"
+subtitle: "Balanced for PvP & encourages unit micro"
