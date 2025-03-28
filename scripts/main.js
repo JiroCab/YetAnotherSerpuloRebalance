@@ -498,9 +498,9 @@ Blocks.meltdown.shootType.collidesAir = false;
 
 
 
-Blocks.coreFoundation.scaledHealth = 600;
+Blocks.coreFoundation.health = 9600;
 
-Blocks.coreNucleus.scaledHealth = 900;
+Blocks.coreNucleus.health = 22500;
 
 
 
