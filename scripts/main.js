@@ -430,7 +430,7 @@ Blocks.parallax.range = 280;
 Blocks.parallax.status = StatusEffects.unmoving;
 Blocks.parallax.requirements = ItemStack.with(Items.silicon, 360, Items.titanium, 270, Items.graphite, 90);
 
-Blockd.segment.range = 300;
+Blocks.segment.range = 300;
 
 Blocks.tsunami.inaccuracy = 30;
 Blocks.tsunami.shoot.shots = 3;
