@@ -27,7 +27,7 @@ T4 reconstructor cost reduced
 T1 air factory
    cost adjusted
       copper - 60
-      lead - 70
+      lead - 69
       silicon - 90
 
 
@@ -247,6 +247,7 @@ Corvus
 Crawler
    Damage 200
    Cannot hit air
+   Build time increased to 15s
 
 Atrax
    400 HP
