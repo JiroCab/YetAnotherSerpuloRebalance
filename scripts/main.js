@@ -505,11 +505,10 @@ Blocks.coreFoundation.health = 9600;
 
 Blocks.coreNucleus.health = 22500;
 
-
-
+Blocks.groundFactory.plans.get(1).time = 60 * 15;
 
 Blocks.airFactory.scaledHealth = 105;
-Blocks.airFactory.requirements = ItemStack.with(Items.copper, 60, Items.lead, 70, Items.silicon, 90);
+Blocks.airFactory.requirements = ItemStack.with(Items.copper, 60, Items.lead, 69, Items.silicon, 90);
 
 Blocks.groundFactory.scaledHealth = 115;
 
