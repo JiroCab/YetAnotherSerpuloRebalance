@@ -24,11 +24,24 @@ T4 reconstructor cost reduced
    Silicon - 700
    Plastanium - 250
 
+T2 reconstructor cost increased
+   copper - 400
+   lead - 240
+   titanium - 200
+   silicon - 270
+
 T1 air factory
    cost adjusted
       copper - 60
       lead - 69
       silicon - 90
+
+T1 naval factory
+   cost adjusted
+      copper - 300
+      lead - 260
+      silicon - 180
+      metaglass - 240
 
 
 
