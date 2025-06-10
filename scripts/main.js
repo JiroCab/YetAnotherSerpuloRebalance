@@ -513,8 +513,10 @@ Blocks.airFactory.requirements = ItemStack.with(Items.copper, 60, Items.lead, 69
 Blocks.groundFactory.scaledHealth = 115;
 
 Blocks.navalFactory.scaledHealth = 120;
+Blocks.navalFactory.requirements = ItemStack.with(Items.copper, 300, Items.lead, 260, Items.silicon, 180, Items.metaglass, 240);
 
 Blocks.additiveReconstructor.scaledHealth = 125;
+Blocks.additiveReconstructor.requirements = ItemStack.with(Items.copper, 400, Items.lead, 240, Items.titanium, 200, Items.silicon, 270);
 
 Blocks.multiplicativeReconstructor.scaledHealth = 125;
 
