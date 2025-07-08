@@ -119,19 +119,19 @@ Cyclone
    Damage rework:
       Metaglass
          6
-         45 area (3.1 aoe)
-         4 x 110 frag bullets
+         45 area (2.5 aoe)
+         2 x 110 frag bullets
       Plastanium
         8
-        37 area (5 aoe)
-        8 x 110 frag bullets
+        37 area (2.5 aoe)
+        4 x 110 frag bullets
       Surge Alloy
         13
-        75 area (4.7 aoe)
+        75 area (2.5 aoe)
         2 x 55 lightning
       Blast Compound
         8
-        110 area (7.5 aoe)
+        55 area (7.5 aoe)
 
 
 
