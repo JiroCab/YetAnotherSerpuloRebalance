@@ -179,6 +179,7 @@ Poly
    Missiles can only damage air units 
    Ignores shields
    Damage 40
+   Able to transport up to T2 units
 
 Mega
    Health 1200
@@ -199,6 +200,7 @@ Oct
    Shield 40000
    Shield regen 500
    Item capacity 1000
+   Hugely increased payload cap
 
 
 
@@ -222,7 +224,7 @@ Scepter
       Damage 100
       Lightning damage 5
    Little guns only hit air
-      Damage 25
+      Damage 15
       Homing
 
 Reign
@@ -264,6 +266,7 @@ Crawler
 
 Atrax
    400 HP
+   Amphibious
    Has slow firing AA flak cannon
       Damage 40 area(3.1aoe)
       Reload 3s
@@ -272,6 +275,7 @@ Spiroct
    Cannot hit air
    Speed 5
    Health 2000
+   Amphibious
    Sap lasers:
      no longer life steal
      -90% building dmg
@@ -281,6 +285,7 @@ Arkyid
    Cannot hit air
    Speed 5
    Health 8000
+   Amphibious
    Main cannon damage 5
    Sap lasers:
      no longer life steal
@@ -290,6 +295,7 @@ Arkyid
 Toxopid
    Cannot hit air
    Speed 5
+   Amphibious
    Fuse-like cannon damage 500
 
 
