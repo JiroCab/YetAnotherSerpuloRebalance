@@ -44,7 +44,7 @@ fortressAAWeapon.bullet.absorbable = false;
 UnitTypes.fortress.weapons.add(fortressAAWeapon);
 UnitTypes.fortress.health = 500;
 UnitTypes.fortress.range = (32*8);
-UnitTypes.fortress.weapons.get(0).bullet.splashDamageRadius = 24
+UnitTypes.fortress.weapons.get(0).bullet.splashDamageRadius = 24;
 
 UnitTypes.scepter.health = 2000;
 UnitTypes.scepter.speed = (3.22 / 7.5);
@@ -55,7 +55,7 @@ UnitTypes.scepter.weapons.get(0).bullet.lifetime = (32 * 8) / 8;
 UnitTypes.scepter.weapons.get(0).shootCone = 6.9; //incrased the shoot cone to reduce ai dumbness
 UnitTypes.scepter.weapons.get(1).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(1).shootSound = Sounds.shootSnap;
-UnitTypes.scepter.weapons.get(1).bullet.damage = 25;
+UnitTypes.scepter.weapons.get(1).bullet.damage = 15;
 UnitTypes.scepter.weapons.get(1).bullet.weaveMag = 3.5;
 UnitTypes.scepter.weapons.get(1).bullet.weaveScale = 4;
 UnitTypes.scepter.weapons.get(1).bullet.trailWidth = 2;
@@ -65,7 +65,7 @@ UnitTypes.scepter.weapons.get(1).bullet.lifetime = (32 * 8) / 5;
 UnitTypes.scepter.weapons.get(1).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
 UnitTypes.scepter.weapons.get(2).bullet.collidesGround = false;
 UnitTypes.scepter.weapons.get(2).shootSound = Sounds.shootSnap;
-UnitTypes.scepter.weapons.get(2).bullet.damage = 25;
+UnitTypes.scepter.weapons.get(2).bullet.damage = 15;
 UnitTypes.scepter.weapons.get(2).bullet.weaveMag = 3.5;
 UnitTypes.scepter.weapons.get(2).bullet.weaveScale = 4;
 UnitTypes.scepter.weapons.get(2).bullet.trailWidth = 2;
@@ -90,6 +90,7 @@ novaHeal.pulseStroke = 1;
 novaHeal.x = 3;
 novaHeal.y = -4;
 novaHeal.rotate = false;
+novaHeal.ignoreRotation = false;
 novaHeal.beamWidth = 0.3;
 novaHeal.layerOffset = -0.01;
 novaHeal.repairSpeed = 0.2;
@@ -156,6 +157,7 @@ UnitTypes.atrax.range = 110;
 UnitTypes.atrax.maxRange = 110; //manual ovrride so it doesnt attack at full range of the mini scatter (18)
 UnitTypes.atrax.weapons.add(atraxAAWeapon);
 UnitTypes.atrax.health = 400;
+UnitTypes.atrax.hovering = true;
 
 //Unrelated, Rushie cannot spell spriroct
 UnitTypes.spiroct.speed = (5 / 7.5);
@@ -171,6 +173,7 @@ UnitTypes.spiroct.weapons.get(1).shootStatusDuration = 20;
 UnitTypes.spiroct.weapons.get(1).bullet.sapStrength = 0;
 UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.spiroct.health = 2000;
+UnitTypes.spiroct.hovering = true;
 
 UnitTypes.arkyid.speed = (5 / 7.5);
 UnitTypes.arkyid.targetAir = false;
@@ -193,11 +196,13 @@ UnitTypes.arkyid.weapons.get(3).bullet.splashDamage = 5;
 UnitTypes.arkyid.weapons.get(3).bullet.lifetime = 100;
 UnitTypes.arkyid.maxRange = 55;
 UnitTypes.arkyid.health = 8000;
+UnitTypes.arkyid.hovering = true;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.targetAir = false;
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
 UnitTypes.toxopid.weapons.get(0).bullet.collidesAir = false;
+UnitTypes.toxopid.hovering = true;
 
 let monoAblity = new RegenAbility();
 monoAblity.percentAmount = 1 / (300 * 60) * 100; //full hp in 5mins, this is 0.005555557~ and why it doesnt add % in the databse bc of the > 0.01 check lul
@@ -253,6 +258,7 @@ UnitTypes.oct.health = 12000;
 UnitTypes.oct.buildSpeed = 20;
 UnitTypes.oct.itemCapacity = 1000;
 UnitTypes.oct.trailLength = 7;
+UnitTypes.oct.payloadCapacity = (100 * 100) * 64;
 UnitTypes.oct.abilities.get(0).max = 40000;
 UnitTypes.oct.abilities.get(0).regen = (500/60);
 //when I loaded up the mod the shield regen was 30,000 lol
