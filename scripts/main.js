@@ -158,6 +158,7 @@ UnitTypes.atrax.maxRange = 110; //manual ovrride so it doesnt attack at full ran
 UnitTypes.atrax.weapons.add(atraxAAWeapon);
 UnitTypes.atrax.health = 400;
 UnitTypes.atrax.hovering = true;
+UnitTypes.atrax.drownTimeMultiplier = 99999;
 
 //Unrelated, Rushie cannot spell spriroct
 UnitTypes.spiroct.speed = (5 / 7.5);
@@ -174,6 +175,7 @@ UnitTypes.spiroct.weapons.get(1).bullet.sapStrength = 0;
 UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.spiroct.health = 2000;
 UnitTypes.spiroct.hovering = true;
+UnitTypes.spiroct.drownTimeMultiplier = 99999;
 
 UnitTypes.arkyid.speed = (5 / 7.5);
 UnitTypes.arkyid.targetAir = false;
@@ -197,12 +199,14 @@ UnitTypes.arkyid.weapons.get(3).bullet.lifetime = 100;
 UnitTypes.arkyid.maxRange = 55;
 UnitTypes.arkyid.health = 8000;
 UnitTypes.arkyid.hovering = true;
+UnitTypes.arkyid.drownTimeMultiplier = 99999;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.targetAir = false;
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
 UnitTypes.toxopid.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.toxopid.hovering = true;
+UnitTypes.toxopid.drownTimeMultiplier = 99999;
 
 let monoAblity = new RegenAbility();
 monoAblity.percentAmount = 1 / (300 * 60) * 100; //full hp in 5mins, this is 0.005555557~ and why it doesnt add % in the databse bc of the > 0.01 check lul
