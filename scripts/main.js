@@ -231,6 +231,7 @@ UnitTypes.spiroct.maxRange = 80;
 let arkyidTorpedo1 = spiroctTorpedo.copy();
 arkyidTorpedo1.x = 6;
 arkyidTorpedo1.mirror = true;
+arkyidTorpedo1.alternate = false;
 let arkyidTorpedo2 = spiroctTorpedo.copy();
 
 UnitTypes.arkyid.speed = (5 / 7.5);
@@ -264,14 +265,15 @@ UnitTypes.arkyid.maxRange = 192;
 let toxopidTorpedo = spiroctTorpedo.copy();
 toxopidTorpedo.reload = 600;
 toxopidTorpedo.bullet = spiroctTorpedo.bullet.copy();
-toxopidTorpedo.bullet.width = 16;
-toxopidTorpedo.bullet.height = 16;
+toxopidTorpedo.bullet.width = 24;
+toxopidTorpedo.bullet.height = 24;
 toxopidTorpedo.bullet.lifetime = 360;
 toxopidTorpedo.bullet.trailWidth = 8;
 toxopidTorpedo.bullet.trailLength = 16;
 toxopidTorpedo.bullet.damage = 10000;
 toxopidTorpedo.bullet.splashDamage = 1000;
 toxopidTorpedo.bullet.splashDamageRadius = 32;
+toxopidTorpedo.bullet.speed = 0.5;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.targetAir = false;
