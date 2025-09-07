@@ -276,26 +276,41 @@ Spiroct
    Speed 5
    Health 2000
    Amphibious
+   Now fires Torpedos:
+      Damage 300
+        +40 area (4aoe)
+      Range 48
+      Reload 4s
    Sap lasers:
-     no longer life steal
-     -90% building dmg
-     slow the Sproct when fired
+      no longer life steal
+      -90% building dmg
+      slow the Sproct when fired
 
 Arkyid
    Cannot hit air
    Speed 5
    Health 8000
    Amphibious
+   Now fires 3x Torpedos:
+      Damage 300
+        +40 area (4aoe)
+      Range 48
+      Reload 4s
    Main cannon damage 5
    Sap lasers:
-     no longer life steal
-     -90% building dmg
-     slow the Arkyid when fired
+      no longer life steal
+      -90% building dmg
+      slow the Arkyid when fired
 
 Toxopid
    Cannot hit air
    Speed 5
    Amphibious
+   Now fires Torpedos:
+      Damage 10000
+        +1000 area (4aoe)
+      Range 80
+      Reload 10s
    Fuse-like cannon damage 500
 
 
