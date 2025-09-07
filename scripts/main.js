@@ -160,6 +160,50 @@ UnitTypes.atrax.health = 400;
 UnitTypes.atrax.hovering = true;
 UnitTypes.atrax.drownTimeMultiplier = 99999;
 
+let spiroctTorpedo = new Weapon();
+spiroctTorpedo.shootSound = Sounds.mineDeploy;
+spiroctTorpedo.layerOffset = -1;
+spiroctTorpedo.top = false;
+spiroctTorpedo.mirror = false;
+spiroctTorpedo.x = 0;
+spiroctTorpedo.y = 0;
+spiroctTorpedo.shootX = 0;
+spiroctTorpedo.shootY = 0;
+spiroctTorpedo.reload = 240;
+spiroctTorpedo.bullet = BasicBulletType(2,500);
+spiroctTorpedo.bullet.sprite = "mine-bullet";
+spiroctTorpedo.bullet.width = height = 8;
+spiroctTorpedo.bullet.layer = Layer.scorch;
+spiroctTorpedo.bullet.shootEffect = smokeEffect = Fx.none;
+spiroctTorpedo.bullet.maxRange = 100;
+spiroctTorpedo.bullet.ignoreRotation = true;
+spiroctTorpedo.bullet.backColor = Pal.sapBulletBack;
+spiroctTorpedo.bullet.frontColor = Pal.sapBullet;
+spiroctTorpedo.bullet.mixColorTo = Color.white;
+spiroctTorpedo.bullet.hitSound = Sounds.plasmaboom;
+spiroctTorpedo.bullet.underwater = true;
+spiroctTorpedo.bullet.ejectEffect = Fx.none;
+spiroctTorpedo.bullet.hitSize = 22;
+spiroctTorpedo.bullet.collidesAir = false;
+spiroctTorpedo.bullet.lifetime = 87;
+spiroctTorpedo.bullet.hitEffect = Fx.sapExplosion;
+spiroctTorpedo.bullet.keepVelocity = false;
+spiroctTorpedo.bullet.shrinkX = shrinkY = 0;
+spiroctTorpedo.bullet.inaccuracy = 2;
+spiroctTorpedo.bullet.weaveMag = 5;
+spiroctTorpedo.bullet.weaveScale = 4;
+spiroctTorpedo.bullet.speed = 2;
+spiroctTorpedo.bullet.drag = -0.017;
+spiroctTorpedo.bullet.homingPower = 0.05;
+spiroctTorpedo.bullet.collideFloor = true;
+spiroctTorpedo.bullet.trailColor = Pal.sapBullet;
+spiroctTorpedo.bullet.trailWidth = 3;
+spiroctTorpedo.bullet.trailLength = 8;
+spiroctTorpedo.bullet.splashDamage = 40;
+spiroctTorpedo.bullet.splashDamageRadius = 32;
+spiroctTorpedo.bullet.status = StatusEffects.sapped;
+spiroctTorpedo.bullet.statusDuration = 60 * 10;
+
 //Unrelated, Rushie cannot spell spriroct
 UnitTypes.spiroct.speed = (5 / 7.5);
 UnitTypes.spiroct.targetAir = false;
@@ -176,62 +220,7 @@ UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.spiroct.health = 2000;
 UnitTypes.spiroct.hovering = true;
 UnitTypes.spiroct.drownTimeMultiplier = 99999;
-UnitTypes.spiroct.weapons.add(new Weapon(){{
-                mirror = false;
-                rotate = true;
-                reload = 90f;
-                x = y = shootX = shootY = 0f;
-                shootSound = Sounds.mineDeploy;
-                rotateSpeed = 180f;
-
-                shoot.shots = 1;
-
-                bullet = new BasicBulletType(){{
-                    sprite = "mine-bullet";
-                    width = height = 8f;
-                    layer = Layer.scorch;
-                    shootEffect = smokeEffect = Fx.none;
-
-                    maxRange = 100f;
-                    ignoreRotation = true;
-
-                    backColor = Pal.sapBulletBack;
-                    frontColor = Pal.sapBullet;
-                    mixColorTo = Color.white;
-
-                    hitSound = Sounds.plasmaboom;
-                    underwater = true;
-
-                    ejectEffect = Fx.none;
-                    hitSize = 22f;
-
-                    collidesAir = false;
-
-                    lifetime = 87f;
-
-                    hitEffect = new MultiEffect(Fx.blastExplosion, Fx.sapExplosion);
-                    keepVelocity = false;
-
-                    shrinkX = shrinkY = 0f;
-
-                    inaccuracy = 2f;
-                    weaveMag = 5f;
-                    weaveScale = 4f;
-                    speed = 2f;
-                    drag = -0.017f;
-                    homingPower = 0.05f;
-                    collideFloor = true;
-                    trailColor = Pal.sapBullet;
-                    trailWidth = 3f;
-                    trailLength = 8;
-
-                    splashDamage = 40f;
-                    splashDamageRadius = 32f;
-
-					status = StatusEffects.sapped;
-                    statusDuration = 60f * 10;
-                }};
-	       }});
+UnitTypes.spiroct.weapons.add(spiroctTorpedo);
 
 UnitTypes.arkyid.speed = (5 / 7.5);
 UnitTypes.arkyid.targetAir = false;
