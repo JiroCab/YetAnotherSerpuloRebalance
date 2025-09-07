@@ -268,13 +268,13 @@ toxopidTorpedo.reload = 600;
 toxopidTorpedo.bullet = spiroctTorpedo.bullet.copy();
 toxopidTorpedo.bullet.width = 24;
 toxopidTorpedo.bullet.height = 24;
-toxopidTorpedo.bullet.lifetime = 1000;
+toxopidTorpedo.bullet.lifetime = 700;
 toxopidTorpedo.bullet.trailWidth = 8;
-toxopidTorpedo.bullet.trailLength = 16;
+toxopidTorpedo.bullet.trailLength = 24;
 toxopidTorpedo.bullet.damage = 10000;
 toxopidTorpedo.bullet.splashDamage = 1000;
 toxopidTorpedo.bullet.splashDamageRadius = 32;
-toxopidTorpedo.bullet.speed = 0.5;
+toxopidTorpedo.bullet.speed = 1;
 toxopidTorpedo.bullet.drag = 0;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
@@ -381,7 +381,7 @@ UnitTypes.zenith.weapons.get(0).bullet.damage = 45;
 UnitTypes.zenith.weapons.get(0).bullet.lifetime = 38;
 
 let antumbraAAWeapon = fortressAAWeapon.copy();
-antumbraAAWeapon.y = -24;
+antumbraAAWeapon.y = -16;
 
 UnitTypes.antumbra.health = 5000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
