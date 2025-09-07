@@ -183,7 +183,7 @@ spiroctTorpedo.bullet.backColor = Pal.sapBulletBack;
 spiroctTorpedo.bullet.frontColor = Pal.sapBullet;
 spiroctTorpedo.bullet.mixColorTo = Color.white;
 spiroctTorpedo.bullet.hitSound = Sounds.plasmaboom;
-spiroctTorpedo.bullet.underwater = true;
+if(Version.number != 7)spiroctTorpedo.bullet.underwater = true;
 spiroctTorpedo.bullet.ejectEffect = Fx.none;
 spiroctTorpedo.bullet.hitSize = 22;
 spiroctTorpedo.bullet.collidesAir = false;
