@@ -228,10 +228,10 @@ UnitTypes.spiroct.weapons.add(spiroctTorpedo);
 UnitTypes.spiroct.range = 80;
 UnitTypes.spiroct.maxRange = 80;
 
-Let arkyidTorpedo1 = spiroctTorpedo.copy();
+let arkyidTorpedo1 = spiroctTorpedo.copy();
 arkyidTorpedo1.x = 6;
 arkyidTorpedo1.mirror = true;
-Let arkyidTorpedo2 = spiroctTorpedo.copy();
+let arkyidTorpedo2 = spiroctTorpedo.copy();
 
 UnitTypes.arkyid.speed = (5 / 7.5);
 UnitTypes.arkyid.targetAir = false;
@@ -261,20 +261,12 @@ UnitTypes.arkyid.weapons.add(arkyidTorpedo2);
 UnitTypes.arkyid.range = 192;
 UnitTypes.arkyid.maxRange = 192;
 
-Let toxopidTorpedo = spiroctTorpedo.copy();
-spiroctTorpedo.reload = 600;
+let toxopidTorpedo = spiroctTorpedo.copy();
+toxopidTorpedo.reload = 600;
 toxopidTorpedo.bullet = spiroctTorpedo.bullet.copy();
-toxopidTorpedo.bullet.sprite = "mine-bullet";
 toxopidTorpedo.bullet.width = 16;
 toxopidTorpedo.bullet.height = 16;
 toxopidTorpedo.bullet.lifetime = 360;
-toxopidTorpedo.bullet.weaveMag = 2;
-toxopidTorpedo.bullet.weaveScale = 1.5;
-toxopidTorpedo.bullet.speed = 0.5;
-toxopidTorpedo.bullet.drag = -0.017;
-toxopidTorpedo.bullet.homingPower = 0.05;
-toxopidTorpedo.bullet.collideFloor = true;
-toxopidTorpedo.bullet.trailColor = Pal.sapBullet;
 toxopidTorpedo.bullet.trailWidth = 8;
 toxopidTorpedo.bullet.trailLength = 16;
 toxopidTorpedo.bullet.damage = 10000;
