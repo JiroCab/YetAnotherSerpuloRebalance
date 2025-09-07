@@ -232,6 +232,7 @@ let arkyidTorpedo1 = spiroctTorpedo.copy();
 arkyidTorpedo1.x = 6;
 arkyidTorpedo1.mirror = true;
 arkyidTorpedo1.alternate = false;
+arkyidTorpedo1.reload = 120;
 let arkyidTorpedo2 = spiroctTorpedo.copy();
 
 UnitTypes.arkyid.speed = (5 / 7.5);
@@ -267,13 +268,14 @@ toxopidTorpedo.reload = 600;
 toxopidTorpedo.bullet = spiroctTorpedo.bullet.copy();
 toxopidTorpedo.bullet.width = 24;
 toxopidTorpedo.bullet.height = 24;
-toxopidTorpedo.bullet.lifetime = 360;
+toxopidTorpedo.bullet.lifetime = 1000;
 toxopidTorpedo.bullet.trailWidth = 8;
 toxopidTorpedo.bullet.trailLength = 16;
 toxopidTorpedo.bullet.damage = 10000;
 toxopidTorpedo.bullet.splashDamage = 1000;
 toxopidTorpedo.bullet.splashDamageRadius = 32;
 toxopidTorpedo.bullet.speed = 0.5;
+toxopidTorpedo.bullet.drag = 0;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.targetAir = false;
@@ -378,10 +380,13 @@ UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 2);
 UnitTypes.zenith.weapons.get(0).bullet.damage = 45;
 UnitTypes.zenith.weapons.get(0).bullet.lifetime = 38;
 
+let antumbraAAWeapon = fortressAAWeapon.copy();
+antumbraAAWeapon.y = -24;
+
 UnitTypes.antumbra.health = 5000;
 UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
-UnitTypes.antumbra.weapons.add(fortressAAWeapon);
+UnitTypes.antumbra.weapons.add(antumbraAAWeapon);
 
 UnitTypes.eclipse.health = 66000;
 
