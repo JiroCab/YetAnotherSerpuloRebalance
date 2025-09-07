@@ -170,7 +170,8 @@ spiroctTorpedo.y = 0;
 spiroctTorpedo.shootX = 0;
 spiroctTorpedo.shootY = 0;
 spiroctTorpedo.reload = 240;
-spiroctTorpedo.bullet = BasicBulletType(2,500);
+spiroctTorpedo.rotateSpeed = 180;
+spiroctTorpedo.bullet = BasicBulletType(2,300);
 spiroctTorpedo.bullet.sprite = "mine-bullet";
 spiroctTorpedo.bullet.width = 8;
 spiroctTorpedo.bullet.height = 8;
@@ -224,6 +225,8 @@ UnitTypes.spiroct.health = 2000;
 UnitTypes.spiroct.hovering = true;
 UnitTypes.spiroct.drownTimeMultiplier = 99999;
 UnitTypes.spiroct.weapons.add(spiroctTorpedo);
+UnitTypes.spiroct.range = 80;
+UnitTypes.spiroct.maxRange = 80;
 
 UnitTypes.arkyid.speed = (5 / 7.5);
 UnitTypes.arkyid.targetAir = false;
