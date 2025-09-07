@@ -176,6 +176,62 @@ UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.spiroct.health = 2000;
 UnitTypes.spiroct.hovering = true;
 UnitTypes.spiroct.drownTimeMultiplier = 99999;
+UnitTypes.spiroct.weapons.add(new Weapon(){{
+                mirror = false;
+                rotate = true;
+                reload = 90f;
+                x = y = shootX = shootY = 0f;
+                shootSound = Sounds.mineDeploy;
+                rotateSpeed = 180f;
+
+                shoot.shots = 1;
+
+                bullet = new BasicBulletType(){{
+                    sprite = "mine-bullet";
+                    width = height = 8f;
+                    layer = Layer.scorch;
+                    shootEffect = smokeEffect = Fx.none;
+
+                    maxRange = 100f;
+                    ignoreRotation = true;
+
+                    backColor = Pal.sapBulletBack;
+                    frontColor = Pal.sapBullet;
+                    mixColorTo = Color.white;
+
+                    hitSound = Sounds.plasmaboom;
+                    underwater = true;
+
+                    ejectEffect = Fx.none;
+                    hitSize = 22f;
+
+                    collidesAir = false;
+
+                    lifetime = 87f;
+
+                    hitEffect = new MultiEffect(Fx.blastExplosion, Fx.sapExplosion);
+                    keepVelocity = false;
+
+                    shrinkX = shrinkY = 0f;
+
+                    inaccuracy = 2f;
+                    weaveMag = 5f;
+                    weaveScale = 4f;
+                    speed = 2f;
+                    drag = -0.017f;
+                    homingPower = 0.05f;
+                    collideFloor = true;
+                    trailColor = Pal.sapBullet;
+                    trailWidth = 3f;
+                    trailLength = 8;
+
+                    splashDamage = 40f;
+                    splashDamageRadius = 32f;
+
+					status = StatusEffects.sapped;
+                    statusDuration = 60f * 10;
+                }};
+	       }});
 
 UnitTypes.arkyid.speed = (5 / 7.5);
 UnitTypes.arkyid.targetAir = false;
