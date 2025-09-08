@@ -220,6 +220,7 @@ Fortress
 Scepter
    Health 2000
    Range 31
+   Shield ability removed
    Big guns only hit ground
       Damage 100
       Lightning damage 5
