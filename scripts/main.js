@@ -73,7 +73,7 @@ UnitTypes.scepter.weapons.get(2).bullet.trailLength = 3;
 UnitTypes.scepter.weapons.get(2).bullet.speed = 5;
 UnitTypes.scepter.weapons.get(2).bullet.lifetime = (32 * 8) / 5;
 UnitTypes.scepter.weapons.get(2).bullet.homingPower = 0.1; //a bit higher so it can hit horizons better with the weave
-UnitTypes.scepter.abilities.remove(0);
+if(Version.number != 7)UnitTypes.scepter.abilities.remove(0);
 
 UnitTypes.reign.health =75000;
 UnitTypes.reign.weapons.get(0).bullet.collidesAir = false;
