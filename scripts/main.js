@@ -119,9 +119,9 @@ UnitTypes.vela.health = 3000;
 
 UnitTypes.corvus.targetAir = false;
 UnitTypes.corvus.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.corvus.weapons.get(0).bullet.damage = 2000;
+UnitTypes.corvus.weapons.get(0).bullet.damage = 3000;
 UnitTypes.corvus.weapons.get(0).bullet.length = (62 * 8);
-UnitTypes.corvus.health = 10000;
+UnitTypes.corvus.health = 7000;
 
 UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
@@ -354,6 +354,7 @@ UnitTypes.oct.trailLength = 7;
 UnitTypes.oct.payloadCapacity = (100 * 100) * 64;
 UnitTypes.oct.abilities.get(0).max = 40000;
 UnitTypes.oct.abilities.get(0).regen = (500/60);
+UnitTypes.oct.abilities.add(new ShieldRegenFieldAbility(100, 500, 60 * 1, 140));
 //when I loaded up the mod the shield regen was 30,000 lol
 
 UnitTypes.flare.weapons.get(0).bullet.homingPower = 0.04;
@@ -398,10 +399,11 @@ UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.antumbra.weapons.add(antumbraAAWeapon);
 
-UnitTypes.eclipse.health = 66000;
+UnitTypes.eclipse.health = 80000;
 
 UnitTypes.sei.health = 3000;
 UnitTypes.sei.weapons.get(0).bullet.maxRange = 30;
+UnitTypes.sei.weapons.get(0).reload = 90;
 
 UnitTypes.omura.health = 15000;
 UnitTypes.omura.speed = (2.25/7.5);
@@ -441,17 +443,17 @@ if(Version.number != 7){
 	UnitTypes.retusa.weapons.add(retusaMountv7);
 }
 
-UnitTypes.aegires.health = 1200;
+UnitTypes.aegires.health = 2200;
 
 //hmm navaSnack.....
 let navaSnackSheild = new ShieldArcAbility();
 navaSnackSheild.radius = 42;
 navaSnackSheild.angle = 120;
 navaSnackSheild.regen = 1.2;
-navaSnackSheild.cooldown = 60 * 8;
+navaSnackSheild.cooldown = 60 * 0;
 navaSnackSheild.max = 2000;
 navaSnackSheild.width = 10;
-navaSnackSheild.whenShooting = false;
+navaSnackSheild.whenShooting = true;
 
 UnitTypes.navanax.abilities.add(navaSnackSheild)
 UnitTypes.navanax.health = 60000;
