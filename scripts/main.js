@@ -435,8 +435,8 @@ if(Version.number != 7){
 	UnitTypes.retusa.weapons.get(2).x = 3;
 }else{
 	let retusaMountv7 = retusaMount.copy();
-	retusaMountv7.x = 3.5;
-	retusaMountv7.y = 2;
+	retusaMountv7.x = -3;
+	retusaMountv7.y = 4;
 	
 	UnitTypes.retusa.weapons.add(retusaMountv7);
 }
