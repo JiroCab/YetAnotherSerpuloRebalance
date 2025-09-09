@@ -195,7 +195,7 @@ if(Version.number != 7)spiroctTorpedo.bullet.underwater = true;
 spiroctTorpedo.ejectEffect = Fx.none;
 spiroctTorpedo.bullet.hitSize = 22;
 spiroctTorpedo.bullet.collidesAir = false;
-spiroctTorpedo.bullet.lifetime = 87;
+spiroctTorpedo.bullet.lifetime = 60;
 spiroctTorpedo.bullet.hitEffect = Fx.sapExplosion;
 spiroctTorpedo.bullet.keepVelocity = false;
 spiroctTorpedo.bullet.shrinkX = 0;
@@ -285,6 +285,7 @@ toxopidTorpedo.bullet.splashDamageRadius = 32;
 toxopidTorpedo.bullet.speed = 1;
 toxopidTorpedo.bullet.drag = 0;
 toxopidTorpedo.bullet.homingPower = 0.02;
+toxopidTorpedo.bullet.homingRange = 3000;
 
 UnitTypes.toxopid.speed = (5 / 7.5);
 UnitTypes.toxopid.targetAir = false;
