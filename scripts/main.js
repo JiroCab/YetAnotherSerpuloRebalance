@@ -429,10 +429,10 @@ retusaMount.rotate = true;
 retusaMount.bullet = retusaBolt;
 UnitTypes.retusa.weapons.add(retusaMount);
 if(Version.number != 7){
-	UnitTypes.retusa.weapons.get(1).y = 3;
-	UnitTypes.retusa.weapons.get(1).x = 3;
-	UnitTypes.retusa.weapons.get(2).y = 3;
-	UnitTypes.retusa.weapons.get(2).x = -3;
+	UnitTypes.retusa.weapons.get(1).y = 4;
+	UnitTypes.retusa.weapons.get(1).x = -3;
+	UnitTypes.retusa.weapons.get(2).y = 4;
+	UnitTypes.retusa.weapons.get(2).x = 3;
 }else{
 	let retusaMountv7 = retusaMount.copy();
 	retusaMountv7.x = 3.5;
@@ -612,7 +612,7 @@ Blocks.spectre.ammoTypes.get(Items.pyratite).knockback = 10;
 Blocks.spectre.scaledHealth = 200;
 
 Blocks.foreshadow.reload = 540;
-if(Version.number != 7)Blocks.foreshadow.maxDamageFraction = -1;
+if(Version.number != 7)Blocks.foreshadow.ammoTypes.get(Items.surgeAlloy).maxDamageFraction = -1;
 
 Blocks.meltdown.targetAir = false;
 Blocks.meltdown.shootType.collidesAir = false;
