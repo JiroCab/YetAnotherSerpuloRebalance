@@ -280,7 +280,7 @@ Spiroct
    Now fires Torpedos:
       Damage 300
         +40 area (4aoe)
-      Range 48
+      Range 30
       Reload 4s
    Sap lasers:
       no longer life steal
@@ -295,7 +295,7 @@ Arkyid
    Now fires 3x Torpedos:
       Damage 300
         +40 area (4aoe)
-      Range 48
+      Range 30
       Reload 4s
    Main cannon damage 5
    Sap lasers:
