@@ -165,7 +165,7 @@ Antumbra
       Extended range
 
 Eclipse 
-   Health 66000
+   Health 80000
 
 
 
@@ -201,6 +201,7 @@ Oct
    Shield regen 500
    Item capacity 1000
    Hugely increased payload cap
+   Added Shield Regen Field ability
 
 
 
@@ -254,9 +255,9 @@ Vela
 
 Corvus
    Cannot hit air
-   Health 10000
+   Health 7000
    Range 61
-   Damage 2000
+   Damage 3000
 
 
 
@@ -318,6 +319,7 @@ Toxopid
 
 Sei
    Health 3000
+   Missile launcher 0.5x fire rate
 
 Omura
    Health 15000
@@ -331,7 +333,7 @@ Retusa
    Now has small laser
 
 Aegires
-   Health 1200
+   Health 2200
 
 Navanax
    Health 60000
