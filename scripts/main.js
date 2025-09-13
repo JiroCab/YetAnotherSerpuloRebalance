@@ -390,6 +390,7 @@ UnitTypes.zenith.weapons.get(0).bullet.keepVelocity = true;
 UnitTypes.zenith.weapons.get(0).bullet.speed = (3 * 2);
 UnitTypes.zenith.weapons.get(0).bullet.damage = 45;
 UnitTypes.zenith.weapons.get(0).bullet.lifetime = 38;
+UnitTypes.zenith.targetGround = false;
 
 let antumbraAAWeapon = fortressAAWeapon.copy();
 antumbraAAWeapon.y = -16;
