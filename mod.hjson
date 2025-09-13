@@ -58,6 +58,12 @@ Duo
    Range increased to 23.75
    Shoots 2 shots per second
 
+Scatter
+   4 armor
+
+Scorch
+   15 armor
+
 Salvo
    No longer hits air
    Shoots a salvo of 25 bullets
@@ -138,6 +144,8 @@ Cyclone
 Flare
    Homing bullets
    Rotates faster
+   Damage 4
+   5 shots per second
 
 Horizon
    Now a hit & run carpet bomber
@@ -330,10 +338,15 @@ Omura
 
 
 Retusa
-   Incrased the laset bolt guns to 4
+   Incrased the laser bolt guns to 4
 
 Aegires
-   Health 2200
+   Health 1200
+   Now Projects a sheild like quasar
+      1000 hp
+      18 hp/s regen
+      15 tile range
+      30 second cooldown
 
 Navanax
    Health 60000
