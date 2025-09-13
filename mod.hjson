@@ -59,10 +59,10 @@ Duo
    Shoots 2 shots per second
 
 Scatter
-   4 armor
+   1 armor
 
 Scorch
-   15 armor
+   12 armor
 
 Salvo
    No longer hits air
@@ -212,6 +212,9 @@ Oct
    Added Shield Regen Field ability
 
 
+
+Dagger 
+   1 armor
 
 Mace
    Speed 5.25
