@@ -13,6 +13,8 @@ lightningBul.lightColor = Color.white;
 lightningBul.collidesGround = false;
 lightningBul.collidesAir = true;
 
+UnitTypes.dagger.armor = 1;
+
 UnitTypes.mace.speed = 0.7; 
 UnitTypes.mace.health = 700; 
 UnitTypes.mace.targetAir = false;
@@ -360,7 +362,7 @@ UnitTypes.oct.abilities.add(new ShieldRegenFieldAbility(100, 500, 60 * 1, 140));
 //when I loaded up the mod the shield regen was 30,000 lol
 
 UnitTypes.flare.weapons.get(0).bullet.homingPower = 0.04;
-UnitTypes.flare.weapons.get(0).shootCone = 90;
+UnitTypes.flare.weapons.get(0).shootCone = 120;
 UnitTypes.flare.rotateSpeed = 100;
 UnitTypes.flare.weapons.get(0).reload = (60*0.2);
 UnitTypes.flare.weapons.get(0).bullet.damage = 4;
@@ -489,9 +491,9 @@ Blocks.duo.reload = 60;
 Blocks.duo.range = 190;
 Blocks.duo.limitRange();
 
-Blocks.scorch.armor = 15;
+Blocks.scorch.armor = 12;
 
-Blocks.scatter.armor = 4;
+Blocks.scatter.armor = 1;
 
 Blocks.swarmer.targetGround = false;
 Blocks.swarmer.inaccuracy = 4;
