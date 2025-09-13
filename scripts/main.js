@@ -160,6 +160,7 @@ UnitTypes.atrax.weapons.add(atraxAAWeapon);
 UnitTypes.atrax.health = 400;
 UnitTypes.atrax.hovering = true;
 UnitTypes.atrax.canDrown = false;
+UnitTypes.atrax.targetAir = true;
 
 let spiroctTorpedo = new Weapon();
 spiroctTorpedo.shootSound = Sounds.mineDeploy;
@@ -327,6 +328,7 @@ UnitTypes.poly.weapons.get(0).bullet.healPercent = 0.01;
 UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
 UnitTypes.poly.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.poly.canHeal = true;
+UnitTypes.quasar.targeGround = false;
 
 UnitTypes.mega.health = 1200;
 UnitTypes.mega.armor = 0;
