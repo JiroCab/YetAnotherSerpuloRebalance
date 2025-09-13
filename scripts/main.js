@@ -94,7 +94,7 @@ novaHeal.rotate = false;
 novaHeal.ignoreRotation = false;
 novaHeal.beamWidth = 0.3;
 novaHeal.layerOffset = -0.01;
-novaHeal.repairSpeed = 0.2;
+novaHeal.repairSpeed = 12/60;
 novaHeal.bullet = new BulletType();
 novaHeal.bullet.maxRange = 80;
 novaHeal.shootCone = 30;
@@ -159,7 +159,7 @@ UnitTypes.atrax.maxRange = 110; //manual ovrride so it doesnt attack at full ran
 UnitTypes.atrax.weapons.add(atraxAAWeapon);
 UnitTypes.atrax.health = 400;
 UnitTypes.atrax.hovering = true;
-UnitTypes.atrax.drownTimeMultiplier = 99999;
+UnitTypes.atrax.canDrown = false;
 
 let spiroctTorpedo = new Weapon();
 spiroctTorpedo.shootSound = Sounds.mineDeploy;
@@ -231,7 +231,7 @@ UnitTypes.spiroct.weapons.get(1).bullet.sapStrength = 0;
 UnitTypes.spiroct.weapons.get(1).bullet.buildingDamageMultiplier = 0.1;
 UnitTypes.spiroct.health = 2000;
 UnitTypes.spiroct.hovering = true;
-UnitTypes.spiroct.drownTimeMultiplier = 99999;
+UnitTypes.spiroct.canDrown = false;
 UnitTypes.spiroct.weapons.add(spiroctTorpedo);
 UnitTypes.spiroct.range = 80;
 UnitTypes.spiroct.maxRange = 80;
@@ -265,7 +265,7 @@ UnitTypes.arkyid.weapons.get(3).bullet.lifetime = 100;
 UnitTypes.arkyid.maxRange = 55;
 UnitTypes.arkyid.health = 8000;
 UnitTypes.arkyid.hovering = true;
-UnitTypes.arkyid.drownTimeMultiplier = 99999;
+UnitTypes.arkyid.canDrown = false;
 UnitTypes.arkyid.weapons.add(arkyidTorpedo1);
 UnitTypes.arkyid.weapons.add(arkyidTorpedo2);
 UnitTypes.arkyid.range = 192;
@@ -292,7 +292,7 @@ UnitTypes.toxopid.targetAir = false;
 UnitTypes.toxopid.weapons.get(0).bullet.damage = 500;
 UnitTypes.toxopid.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.toxopid.hovering = true;
-UnitTypes.toxopid.drownTimeMultiplier = 99999;
+UnitTypes.toxopid.canDrown = false;
 UnitTypes.toxopid.weapons.add(toxopidTorpedo);
 UnitTypes.toxopid.range = 232;
 UnitTypes.toxopid.maxRange = 232;
@@ -358,8 +358,12 @@ UnitTypes.oct.abilities.add(new ShieldRegenFieldAbility(100, 500, 60 * 1, 140));
 //when I loaded up the mod the shield regen was 30,000 lol
 
 UnitTypes.flare.weapons.get(0).bullet.homingPower = 0.04;
-UnitTypes.flare.weapons.get(0).shootCone = 30;
+UnitTypes.flare.weapons.get(0).shootCone = 90;
 UnitTypes.flare.rotateSpeed = 100;
+UnitTypes.flare.weapons.get(0).reload = (60*0.2);
+UnitTypes.flare.weapons.get(0).bullet.damage = 4;
+UnitTypes.flare.weapons.get(0).bullet.width = 3;
+UnitTypes.flare.weapons.get(0).bullet.height = 5;
 
 UnitTypes.horizon.health = 100;
 UnitTypes.horizon.speed = (20 / 7.5);
@@ -444,13 +448,14 @@ if(Version.number != 7){
 	UnitTypes.retusa.weapons.add(retusaMountv7);
 }
 
-UnitTypes.aegires.health = 2200;
+UnitTypes.aegires.health = 1200;
+UnitTypes.aegires.abilities.add(new ForceFieldAbility(120, (18/60), 1000, 60 * 30));
 
 //hmm navaSnack.....
 let navaSnackSheild = new ShieldArcAbility();
 navaSnackSheild.radius = 42;
 navaSnackSheild.angle = 120;
-navaSnackSheild.regen = 1.2;
+navaSnackSheild.regen = (72/60);
 navaSnackSheild.cooldown = 60 * 0;
 navaSnackSheild.max = 2000;
 navaSnackSheild.width = 10;
@@ -482,7 +487,9 @@ Blocks.duo.reload = 60;
 Blocks.duo.range = 190;
 Blocks.duo.limitRange();
 
-Blocks.scorch.armor = 5
+Blocks.scorch.armor = 5;
+
+Blocks.scatter.armor = 4;
 
 Blocks.swarmer.targetGround = false;
 Blocks.swarmer.inaccuracy = 4;
