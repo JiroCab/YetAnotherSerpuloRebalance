@@ -487,7 +487,7 @@ Blocks.duo.reload = 60;
 Blocks.duo.range = 190;
 Blocks.duo.limitRange();
 
-Blocks.scorch.armor = 5;
+Blocks.scorch.armor = 15;
 
 Blocks.scatter.armor = 4;
 
