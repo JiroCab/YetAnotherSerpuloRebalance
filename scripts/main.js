@@ -408,7 +408,7 @@ UnitTypes.antumbra.payloadCapacity = (3 * 3) * 64;
 UnitTypes.antumbra.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.antumbra.weapons.add(antumbraAAWeapon);
 
-UnitTypes.eclipse.health = 66000;
+UnitTypes.eclipse.health = 100000;
 
 UnitTypes.sei.health = 3000;
 UnitTypes.sei.weapons.get(0).bullet.maxRange = 30;
