@@ -15,11 +15,15 @@ lightningBul.collidesAir = true;
 
 UnitTypes.dagger.armor = 1;
 
-UnitTypes.mace.speed = 0.7; 
-UnitTypes.mace.health = 700; 
+UnitTypes.mace.speed = 0.8; 
+UnitTypes.mace.health = 800; 
+UnitTypes.mace.armor = 8;
 UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.mace.weapons.get(0).bullet.damage = 20;
+UnitTypes.mace.weapons.get(0).bullet.buildingDamageMultiplier = 0.5;
+UnitTypes.mace.weapons.get(0).shootStatus = StatusEffects.slow;
+UnitTypes.mace.weapons.get(0).shootStatusDuration = 20;
 
 let fortressAAWeapon = new Weapon("missiles-mount");
 fortressAAWeapon.bullet = new BasicBulletType(5, 150); // syntax speed: (speed, dmg)
@@ -369,7 +373,7 @@ UnitTypes.flare.weapons.get(0).bullet.damage = 4;
 UnitTypes.flare.weapons.get(0).bullet.width = 3;
 UnitTypes.flare.weapons.get(0).bullet.height = 5;
 
-UnitTypes.horizon.health = 100;
+UnitTypes.horizon.health = 200;
 UnitTypes.horizon.speed = (20 / 7.5);
 UnitTypes.horizon.weapons.get(0).shoot.shots = 8;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
