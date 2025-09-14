@@ -15,15 +15,11 @@ lightningBul.collidesAir = true;
 
 UnitTypes.dagger.armor = 1;
 
-UnitTypes.mace.speed = 0.8; 
-UnitTypes.mace.health = 800; 
-UnitTypes.mace.armor = 8;
+UnitTypes.mace.speed = 0.7; 
+UnitTypes.mace.health = 700; 
 UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.mace.weapons.get(0).bullet.damage = 20;
-UnitTypes.mace.weapons.get(0).bullet.buildingDamageMultiplier = 0.5;
-UnitTypes.mace.weapons.get(0).shootStatus = StatusEffects.slow;
-UnitTypes.mace.weapons.get(0).shootStatusDuration = 20;
 
 let fortressAAWeapon = new Weapon("missiles-mount");
 fortressAAWeapon.bullet = new BasicBulletType(5, 150); // syntax speed: (speed, dmg)
@@ -111,6 +107,7 @@ UnitTypes.nova.abilities.remove(0);
 UnitTypes.pulsar.mineTier = -1;
 UnitTypes.pulsar.mineSpeed = 1;
 UnitTypes.pulsar.health = 640;
+UnitTypes.pulsar.weapons.get(0).bullet.damage = 7;
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.quasar.targetAir = false;
@@ -164,6 +161,7 @@ UnitTypes.atrax.range = 110;
 UnitTypes.atrax.maxRange = 110; //manual ovrride so it doesnt attack at full range of the mini scatter (18)
 UnitTypes.atrax.weapons.add(atraxAAWeapon);
 UnitTypes.atrax.health = 400;
+UnitTypes.atrax.armor = 0;
 UnitTypes.atrax.hovering = true;
 UnitTypes.atrax.canDrown = false;
 UnitTypes.atrax.targetAir = true;
@@ -373,7 +371,7 @@ UnitTypes.flare.weapons.get(0).bullet.damage = 4;
 UnitTypes.flare.weapons.get(0).bullet.width = 3;
 UnitTypes.flare.weapons.get(0).bullet.height = 5;
 
-UnitTypes.horizon.health = 200;
+UnitTypes.horizon.health = 100;
 UnitTypes.horizon.speed = (20 / 7.5);
 UnitTypes.horizon.weapons.get(0).shoot.shots = 8;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
