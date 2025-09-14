@@ -253,6 +253,7 @@ Nova
 Pulsar
    Health 640
    No mining
+   Damage 7
 
 Quasar
    Cannot hit air
@@ -279,6 +280,7 @@ Crawler
 
 Atrax
    400 HP
+   0 Armor
    Amphibious
    Has slow firing AA flak cannon
       Damage 40 area(3.1aoe)
