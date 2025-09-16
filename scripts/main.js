@@ -17,6 +17,7 @@ UnitTypes.dagger.armor = 1;
 
 UnitTypes.mace.speed = 0.7; 
 UnitTypes.mace.health = 700; 
+UnitTypes.mace.armor = 5;
 UnitTypes.mace.targetAir = false;
 UnitTypes.mace.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.mace.weapons.get(0).bullet.damage = 20;
@@ -371,7 +372,7 @@ UnitTypes.flare.weapons.get(0).bullet.damage = 4;
 UnitTypes.flare.weapons.get(0).bullet.width = 3;
 UnitTypes.flare.weapons.get(0).bullet.height = 5;
 
-UnitTypes.horizon.health = 100;
+UnitTypes.horizon.health = 200;
 UnitTypes.horizon.speed = (20 / 7.5);
 UnitTypes.horizon.weapons.get(0).shoot.shots = 8;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
