@@ -107,8 +107,7 @@ UnitTypes.nova.abilities.remove(0);
 
 UnitTypes.pulsar.mineTier = -1;
 UnitTypes.pulsar.mineSpeed = 1;
-UnitTypes.pulsar.health = 640;
-UnitTypes.pulsar.weapons.get(0).bullet.damage = 7;
+UnitTypes.pulsar.health = 400;
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.quasar.targetAir = false;
@@ -129,7 +128,7 @@ UnitTypes.corvus.health = 7000;
 
 UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 200;
+UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 250;
 UnitTypes.crawler.weapons.get(0).bullet.splashDamageRadius = 32;
 UnitTypes.crawler.range = (1);
 
@@ -154,7 +153,7 @@ atraxAAWeapon.reload = 300;
 atraxAAWeapon.shootSound = Sounds.shootSnap;
 atraxAAWeapon.bullet.lifetime = 40;
 atraxAAWeapon.bullet.splashDamage = 55;
-atraxAAWeapon.bullet.splashDamageRadius = 25;
+atraxAAWeapon.bullet.splashDamageRadius = 40;
 atraxAAWeapon.bullet.absorbable = false;
 
 UnitTypes.atrax.hitSize = 11;
@@ -334,6 +333,7 @@ UnitTypes.poly.payloadCapacity = (1.5 * 1.5) * 64;
 UnitTypes.poly.constructor = UnitTypes.mega.constructor; //hack to make thier entity have payload
 UnitTypes.poly.canHeal = true;
 UnitTypes.poly.targetGround = false;
+UnitTypes.poly.armor = 2;
 
 UnitTypes.mega.health = 1200;
 UnitTypes.mega.armor = 0;
@@ -372,10 +372,11 @@ UnitTypes.flare.weapons.get(0).bullet.damage = 4;
 UnitTypes.flare.weapons.get(0).bullet.width = 3;
 UnitTypes.flare.weapons.get(0).bullet.height = 5;
 
-UnitTypes.horizon.health = 200;
+UnitTypes.horizon.health = 150;
+UnitTypes.horizon.armor = 0;
 UnitTypes.horizon.speed = (20 / 7.5);
-UnitTypes.horizon.weapons.get(0).shoot.shots = 8;
-UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2;
+UnitTypes.horizon.weapons.get(0).shoot.shots = 10;
+UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2.5;
 UnitTypes.horizon.weapons.get(0).reload = (60 * 5);
 UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
 UnitTypes.horizon.weapons.get(0).bullet.damage = 3;
@@ -392,7 +393,7 @@ zenithSmoke.teamColor = true;
 zenithSmoke.minVelocity = 1.5; 
 
 UnitTypes.zenith.abilities.add(zenithSmoke);
-UnitTypes.zenith.health = 400;
+UnitTypes.zenith.health = 420;
 UnitTypes.zenith.speed = (26 / 7.5);
 UnitTypes.zenith.range = 240;
 UnitTypes.zenith.weapons.get(0).bullet.collidesGround = false;
