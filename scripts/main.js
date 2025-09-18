@@ -346,7 +346,7 @@ UnitTypes.quad.health = 1000;
 UnitTypes.quad.payloadCapacity = 0;
 UnitTypes.quad.speed = (20 / 7.5);
 UnitTypes.quad.constructor = UnitTypes.flare.constructor;
-UnitTypes.quad.weapons.get(0).bullet.damage = 400;												 
+UnitTypes.quad.weapons.get(0).bullet.damage = 1000;												 
 UnitTypes.quad.weapons.get(0).bullet.splashDamage = 1000;
 UnitTypes.quad.weapons.get(0).bullet.homingPower = 100
 UnitTypes.quad.weapons.get(0).bullet.homingRange = 100
@@ -646,12 +646,12 @@ Blocks.groundFactory.plans.get(1).time = 60 * 15;
 Blocks.airFactory.scaledHealth = 105;
 Blocks.airFactory.requirements = ItemStack.with(Items.copper, 60, Items.lead, 69, Items.silicon, 90);
 
-Blocks.groundFactory.scaledHealth = 115;
+Blocks.groundFactory.scaledHealth = 110;
 
-Blocks.navalFactory.scaledHealth = 120;
+Blocks.navalFactory.scaledHealth = 125;
 Blocks.navalFactory.requirements = ItemStack.with(Items.copper, 300, Items.lead, 260, Items.silicon, 180, Items.metaglass, 240);
 
-Blocks.additiveReconstructor.scaledHealth = 125;
+Blocks.additiveReconstructor.scaledHealth = 140;
 Blocks.additiveReconstructor.requirements = ItemStack.with(Items.copper, 400, Items.lead, 240, Items.titanium, 200, Items.silicon, 270);
 
 Blocks.multiplicativeReconstructor.scaledHealth = 125;
