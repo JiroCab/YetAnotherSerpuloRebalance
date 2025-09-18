@@ -149,15 +149,16 @@ Flare
 
 Horizon
    Now a hit & run carpet bomber
-   Health 100
+   Health 150
+   Armor 0
    Speed 20
-   Drops 8 bombs rapidly
+   Drops 10 bombs rapidly
    5 second reload time
    Bomb AOE increased to 4
 
 Zenith
    Now an air superiority fighter
-   Health 400
+   Health 420
    Speed 26
    Missiles can only damage air units
    Ignores shields
@@ -187,6 +188,7 @@ Poly
    Missiles can only damage air units 
    Ignores shields
    Damage 40
+   Armor 2
    Able to transport up to T2 units
 
 Mega
@@ -194,11 +196,12 @@ Mega
    Armor 0
    Speed 16
    Healing factor of bullets reduced
+   90 item capacity
 
 Quad
    Now a hit & run strategic bomber
    Health 1000
-   Damage 1000
+   Damage 1000 + 1000 aoe
    Reload 5s
    Speed 20
    No longer has payload capacity
@@ -251,9 +254,8 @@ Nova
    Now heals units using lasers
 
 Pulsar
-   Health 640
+   Health 400
    No mining
-   Damage 7
 
 Quasar
    Cannot hit air
@@ -263,7 +265,6 @@ Quasar
 Vela
    Cannot hit air
    Health 3000
-   Damage 200/s
 
 Corvus
    Cannot hit air
@@ -274,7 +275,7 @@ Corvus
 
 
 Crawler
-   Damage 200
+   Damage 250
    Cannot hit air
    Build time increased to 15s
 
@@ -283,7 +284,7 @@ Atrax
    0 Armor
    Amphibious
    Has slow firing AA flak cannon
-      Damage 40 area(3.1aoe)
+      Damage 40 area(5aoe)
       Reload 3s
 
 Spiroct
