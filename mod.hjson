@@ -149,10 +149,10 @@ Flare
 
 Horizon
    Now a hit & run carpet bomber
-   Health 150
+   Health 100
    Armor 0
    Speed 20
-   Drops 10 bombs rapidly
+   Drops 8 bombs rapidly
    5 second reload time
    Bomb AOE increased to 4
 
@@ -254,7 +254,7 @@ Nova
    Now heals units using lasers
 
 Pulsar
-   Health 400
+   Health 360
    No mining
 
 Quasar
@@ -275,7 +275,8 @@ Corvus
 
 
 Crawler
-   Damage 250
+   Health 200
+   Damage 200
    Cannot hit air
    Build time increased to 15s
 
