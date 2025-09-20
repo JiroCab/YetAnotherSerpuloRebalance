@@ -107,7 +107,7 @@ UnitTypes.nova.abilities.remove(0);
 
 UnitTypes.pulsar.mineTier = -1;
 UnitTypes.pulsar.mineSpeed = 1;
-UnitTypes.pulsar.health = 400;
+UnitTypes.pulsar.health = 360;
 
 UnitTypes.quasar.weapons.get(0).bullet.collidesAir = false;
 UnitTypes.quasar.targetAir = false;
@@ -126,9 +126,10 @@ UnitTypes.corvus.weapons.get(0).bullet.damage = 3000;
 UnitTypes.corvus.weapons.get(0).bullet.length = (62 * 8);
 UnitTypes.corvus.health = 7000;
 
+UnitTypes.crawler.health = 200;
 UnitTypes.crawler.targetAir = false;
 UnitTypes.crawler.weapons.get(0).bullet.collidesAir = false;
-UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 250;
+UnitTypes.crawler.weapons.get(0).bullet.splashDamage = 200;
 UnitTypes.crawler.weapons.get(0).bullet.splashDamageRadius = 32;
 UnitTypes.crawler.range = (1);
 
@@ -372,10 +373,10 @@ UnitTypes.flare.weapons.get(0).bullet.damage = 4;
 UnitTypes.flare.weapons.get(0).bullet.width = 3;
 UnitTypes.flare.weapons.get(0).bullet.height = 5;
 
-UnitTypes.horizon.health = 150;
+UnitTypes.horizon.health = 100;
 UnitTypes.horizon.armor = 0;
 UnitTypes.horizon.speed = (20 / 7.5);
-UnitTypes.horizon.weapons.get(0).shoot.shots = 10;
+UnitTypes.horizon.weapons.get(0).shoot.shots = 8;
 UnitTypes.horizon.weapons.get(0).shoot.shotDelay = 2.5;
 UnitTypes.horizon.weapons.get(0).reload = (60 * 5);
 UnitTypes.horizon.weapons.get(0).velocityRnd = 3.5;
